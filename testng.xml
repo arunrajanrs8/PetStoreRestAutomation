@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="PetUserSuite">
+<listeners>
+	<listener class-name="api.reporting.ExtentReportManager"></listener>
+</listeners>
+  <test name="PetTest">
+    <classes>
+      <!-- <class name="api.test.DataDrivenTests"/> -->
+      <class name="api.test.UserTest"></class>
+      <class name="api.test.PetTest"></class>
+    </classes>
+  </test> <!-- PetTest -->
+</suite> <!-- PetUserSuite -->

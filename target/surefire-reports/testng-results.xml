@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-04-18T21:11:57 IST" name="PetUserSuite" finished-at="2026-04-18T21:12:14 IST" duration-ms="17484">
+    <groups>
+      <group name="PetAPI">
+        <method signature="PetTest.testCreatePet()[pri:1, instance:api.test.PetTest@2f48b3d2]" name="testCreatePet" class="api.test.PetTest"/>
+        <method signature="PetTest.testGetPet()[pri:2, instance:api.test.PetTest@2f48b3d2]" name="testGetPet" class="api.test.PetTest"/>
+        <method signature="PetTest.testUpdatePet()[pri:3, instance:api.test.PetTest@2f48b3d2]" name="testUpdatePet" class="api.test.PetTest"/>
+        <method signature="PetTest.testDeletePet()[pri:4, instance:api.test.PetTest@2f48b3d2]" name="testDeletePet" class="api.test.PetTest"/>
+      </group> <!-- PetAPI -->
+      <group name="UserAPI">
+        <method signature="UserTest.testCreateUser()[pri:1, instance:api.test.UserTest@4b2a01d4]" name="testCreateUser" class="api.test.UserTest"/>
+        <method signature="UserTest.testGetUser()[pri:2, instance:api.test.UserTest@4b2a01d4]" name="testGetUser" class="api.test.UserTest"/>
+        <method signature="UserTest.testUpdateUser()[pri:3, instance:api.test.UserTest@4b2a01d4]" name="testUpdateUser" class="api.test.UserTest"/>
+        <method signature="UserTest.testDeleteUser()[pri:4, instance:api.test.UserTest@4b2a01d4]" name="testDeleteUser" class="api.test.UserTest"/>
+      </group> <!-- UserAPI -->
+    </groups>
+    <test started-at="2026-04-18T21:11:57 IST" name="PetTest" finished-at="2026-04-18T21:12:14 IST" duration-ms="17484">
+      <class name="api.test.PetTest">
+        <test-method is-config="true" signature="setUpData()[pri:0, instance:api.test.PetTest@2f48b3d2]" started-at="2026-04-18T21:12:07 IST" name="setUpData" finished-at="2026-04-18T21:12:07 IST" duration-ms="55" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpData -->
+        <test-method signature="testCreatePet()[pri:1, instance:api.test.PetTest@2f48b3d2]" started-at="2026-04-18T21:12:07 IST" name="testCreatePet" finished-at="2026-04-18T21:12:08 IST" duration-ms="1135" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreatePet -->
+        <test-method signature="testGetPet()[pri:2, instance:api.test.PetTest@2f48b3d2]" started-at="2026-04-18T21:12:08 IST" name="testGetPet" finished-at="2026-04-18T21:12:09 IST" duration-ms="1192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetPet -->
+        <test-method signature="testUpdatePet()[pri:3, instance:api.test.PetTest@2f48b3d2]" started-at="2026-04-18T21:12:09 IST" name="testUpdatePet" finished-at="2026-04-18T21:12:12 IST" duration-ms="2486" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdatePet -->
+        <test-method signature="testDeletePet()[pri:4, instance:api.test.PetTest@2f48b3d2]" started-at="2026-04-18T21:12:12 IST" name="testDeletePet" finished-at="2026-04-18T21:12:14 IST" duration-ms="2324" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeletePet -->
+      </class> <!-- api.test.PetTest -->
+      <class name="api.test.UserTest">
+        <test-method is-config="true" signature="setUpData()[pri:0, instance:api.test.UserTest@4b2a01d4]" started-at="2026-04-18T21:11:57 IST" name="setUpData" finished-at="2026-04-18T21:11:57 IST" duration-ms="215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpData -->
+        <test-method signature="testCreateUser()[pri:1, instance:api.test.UserTest@4b2a01d4]" started-at="2026-04-18T21:11:57 IST" name="testCreateUser" finished-at="2026-04-18T21:12:00 IST" duration-ms="3347" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateUser -->
+        <test-method signature="testGetUser()[pri:2, instance:api.test.UserTest@4b2a01d4]" started-at="2026-04-18T21:12:00 IST" name="testGetUser" finished-at="2026-04-18T21:12:02 IST" duration-ms="1221" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetUser -->
+        <test-method signature="testUpdateUser()[pri:3, instance:api.test.UserTest@4b2a01d4]" started-at="2026-04-18T21:12:02 IST" name="testUpdateUser" finished-at="2026-04-18T21:12:05 IST" duration-ms="2879" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateUser -->
+        <test-method signature="testDeleteUser()[pri:4, instance:api.test.UserTest@4b2a01d4]" started-at="2026-04-18T21:12:05 IST" name="testDeleteUser" finished-at="2026-04-18T21:12:07 IST" duration-ms="2379" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteUser -->
+      </class> <!-- api.test.UserTest -->
+    </test> <!-- PetTest -->
+  </suite> <!-- PetUserSuite -->
+</testng-results>

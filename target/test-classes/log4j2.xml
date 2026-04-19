@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+	<Properties>
+		<Property name="logPath">Logs</Property>
+		<Property name="fileName">PetStore</Property>
+		<Property name="pattern">[%level] %d{yyyy-MM-dd HH:mm:ss} %c{1}.%M() - %msg%n</Property>
+	</Properties>
+	<Appenders>
+		<!-- Console Appender (INFO level) -->
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout pattern="${pattern}" />
+		</Console>
+		<!-- Rolling File Appender -->
+		<RollingFile name="RollingFile"
+			fileName="${logPath}/${fileName}.log"
+			filePattern="${logPath}/${fileName}_%d{yyyy-MM-dd_HH-mm-ss}_%i.log">
+			<PatternLayout pattern="${pattern}" />
+			<Policies>
+				<!-- Roll over when file exceeds 5MB -->
+				<SizeBasedTriggeringPolicy size="5MB" />
+			</Policies>
+			<!-- Keep limited backup files (optional) -->
+			<DefaultRolloverStrategy max="20" />
+		</RollingFile>
+	</Appenders>
+	<Loggers>
+		<!-- Suppress noisy libraries -->
+		<Logger name="org.apache.poi" level="ERROR" />
+		<Logger name="org.apache.http" level="WARN" />
+		<!-- Root Logger -->
+		<Root level="INFO">
+			<AppenderRef ref="Console" />
+			<AppenderRef ref="RollingFile" />
+		</Root>
+	</Loggers>
+	</Configuration>

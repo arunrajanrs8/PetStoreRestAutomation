@@ -1,0 +1,53 @@
+[INFO] 2026-04-18 15:02:18 UserTest.testCreateUser() - Creating user
+[INFO] 2026-04-18 15:02:18 UserTest.testCreateUser() - User Details: User {username='kelvin.towne', id=1809129176, email='chin.parker@example.com'}
+[INFO] 2026-04-18 15:08:52 UserTest.testCreateUser() - Creating user
+[INFO] 2026-04-18 15:08:52 UserTest.testCreateUser() - User Details: User {username='doyle.ernser', id=1240412896, email='vi.connelly@example.com'}
+[INFO] 2026-04-18 15:11:31 UserTest.testCreateUser() - Creating user
+[INFO] 2026-04-18 15:11:31 UserTest.testCreateUser() - User Details: User {username='kathlyn.streich', id=1240412896, email='cathern.mertz@example.com'}
+[INFO] 2026-04-18 19:44:55 UserTest.testCreateUser() - Creating user
+[INFO] 2026-04-18 19:44:55 UserTest.testCreateUser() - User Details: User {username='philomena.nitzsche', id=505968231, email='eliseo.hermiston@example.com'}
+[INFO] 2026-04-18 19:45:05 PetTest.testCreatePet() - Creating Pet
+[INFO] 2026-04-18 19:45:05 PetTest.testCreatePet() - User Details: api.payload.Pet@5d8cbb32
+[INFO] 2026-04-18 20:07:34 UserTest.testCreateUser() - Creating user
+[INFO] 2026-04-18 20:07:34 UserTest.testCreateUser() - User Details: User {username='trey.krajcik', id=505968231, email='anisha.mcglynn@example.com'}
+[INFO] 2026-04-18 20:07:44 PetTest.testCreatePet() - Creating Pet
+[INFO] 2026-04-18 20:07:44 PetTest.testCreatePet() - User Details: api.payload.Pet@70a81b4e
+[INFO] 2026-04-18 20:42:08 RestAssuredFilter.filter() - ERROR: ExtentTest is NULL
+[INFO] 2026-04-18 20:42:10 RestAssuredFilter.filter() - ERROR: ExtentTest is NULL
+[INFO] 2026-04-18 20:42:11 RestAssuredFilter.filter() - ERROR: ExtentTest is NULL
+[INFO] 2026-04-18 20:42:12 RestAssuredFilter.filter() - ERROR: ExtentTest is NULL
+[INFO] 2026-04-18 20:42:14 RestAssuredFilter.filter() - ERROR: ExtentTest is NULL
+[INFO] 2026-04-18 20:42:15 RestAssuredFilter.filter() - ERROR: ExtentTest is NULL
+[INFO] 2026-04-18 20:42:16 RestAssuredFilter.filter() - ERROR: ExtentTest is NULL
+[INFO] 2026-04-18 20:42:18 RestAssuredFilter.filter() - ERROR: ExtentTest is NULL
+[INFO] 2026-04-18 20:42:19 RestAssuredFilter.filter() - ERROR: ExtentTest is NULL
+[INFO] 2026-04-18 20:42:20 RestAssuredFilter.filter() - ERROR: ExtentTest is NULL
+[INFO] 2026-04-18 20:42:21 RestAssuredFilter.filter() - ERROR: ExtentTest is NULL
+[INFO] 2026-04-18 20:42:22 RestAssuredFilter.filter() - ERROR: ExtentTest is NULL
+[INFO] 2026-04-18 20:42:24 RestAssuredFilter.filter() - ERROR: ExtentTest is NULL
+[INFO] 2026-04-18 20:42:25 RestAssuredFilter.filter() - ERROR: ExtentTest is NULL
+[INFO] 2026-04-18 20:42:26 RestAssuredFilter.filter() - ERROR: ExtentTest is NULL
+[INFO] 2026-04-18 20:42:27 PetTest.testCreatePet() - Creating Pet
+[INFO] 2026-04-18 20:42:27 PetTest.testCreatePet() - User Details: api.payload.Pet@1254a3cd
+[INFO] 2026-04-18 20:42:27 RestAssuredFilter.filter() - ERROR: ExtentTest is NULL
+[INFO] 2026-04-18 20:42:29 RestAssuredFilter.filter() - ERROR: ExtentTest is NULL
+[INFO] 2026-04-18 20:42:30 RestAssuredFilter.filter() - ERROR: ExtentTest is NULL
+[INFO] 2026-04-18 20:42:32 RestAssuredFilter.filter() - ERROR: ExtentTest is NULL
+[INFO] 2026-04-18 20:42:33 RestAssuredFilter.filter() - ERROR: ExtentTest is NULL
+[INFO] 2026-04-18 20:42:34 RestAssuredFilter.filter() - ERROR: ExtentTest is NULL
+[INFO] 2026-04-18 20:42:35 UserTest.testCreateUser() - Creating user
+[INFO] 2026-04-18 20:42:35 UserTest.testCreateUser() - User Details: User {username='ira.johnston', id=1469692066, email='christopher.hackett@example.com'}
+[INFO] 2026-04-18 20:42:35 RestAssuredFilter.filter() - ERROR: ExtentTest is NULL
+[INFO] 2026-04-18 20:42:36 RestAssuredFilter.filter() - ERROR: ExtentTest is NULL
+[INFO] 2026-04-18 20:42:38 RestAssuredFilter.filter() - ERROR: ExtentTest is NULL
+[INFO] 2026-04-18 20:42:39 RestAssuredFilter.filter() - ERROR: ExtentTest is NULL
+[INFO] 2026-04-18 20:42:40 RestAssuredFilter.filter() - ERROR: ExtentTest is NULL
+[INFO] 2026-04-18 20:42:41 RestAssuredFilter.filter() - ERROR: ExtentTest is NULL
+[INFO] 2026-04-18 20:51:35 UserTest.testCreateUser() - Creating user
+[INFO] 2026-04-18 20:51:35 UserTest.testCreateUser() - User Details: User {username='edie.lesch', id=1541942595, email='odell.vonrueden@example.com'}
+[INFO] 2026-04-18 20:51:45 PetTest.testCreatePet() - Creating Pet
+[INFO] 2026-04-18 20:51:45 PetTest.testCreatePet() - User Details: api.payload.Pet@63ee2891
+[INFO] 2026-04-18 21:11:57 UserTest.testCreateUser() - Creating user
+[INFO] 2026-04-18 21:11:57 UserTest.testCreateUser() - User Details: User {username='stan.wisozk', id=878598679, email='dalton.fay@example.com'}
+[INFO] 2026-04-18 21:12:07 PetTest.testCreatePet() - Creating Pet
+[INFO] 2026-04-18 21:12:07 PetTest.testCreatePet() - User Details: api.payload.Pet@48971262
