@@ -1,8 +1,5 @@
 package api.reporting;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -21,8 +18,9 @@ public class ExtentReportManager implements ITestListener{
 	@Override
     public void onStart(ITestContext context) {
 		
-		String timestamp = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss").format(new Date());
-		reportName = "Test-Report_"+timestamp+".html";
+		//String timestamp = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss").format(new Date());
+		//reportName = "Test-Report_"+timestamp+".html";
+		reportName = "index.html";
 		reportPath = System.getProperty("user.dir")+"//Reports//"+reportName;
         
         ExtentSparkReporter sparkReporter = new ExtentSparkReporter(reportPath);
