@@ -26,8 +26,6 @@ public class UserTest {
 	@SheetName("UserDetails")
 	public void testCreateUser(User usrDtls) {
 		
-		logger.info("Creating user");
-		logger.info("User Details: "+usrDtls.toString());
 		Response response = UserEndPoint.createUser(usrDtls);
 		response.then().log().all();
 		Assert.assertEquals(response.getStatusCode(), 200);
@@ -68,7 +66,6 @@ public class UserTest {
 		String email = updateResp.jsonPath().getString("email");
 		Assert.assertEquals(email, usrDtls.getEmail());
 		Assert.assertEquals(updateResp.getStatusCode(), 200);
-		
 		
 	}
 	

@@ -91,3 +91,173 @@
 [INFO] 2026-04-24 15:23:58 PetTest.testGetPet() - PetId: 11022
 [INFO] 2026-04-24 15:23:59 PetTest.testGetPet() - PetId: 11033
 [INFO] 2026-04-24 15:24:00 PetTest.testGetPet() - PetId: 11044
+[INFO] 2026-04-24 16:41:51 ExtentReportManager.onTestStart() - TestName: testGetPet | Thread-Thread[#35,TestNG-PoolService-2,5,main]
+[INFO] 2026-04-24 16:41:51 ExtentReportManager.onTestStart() - Test ThreadId: testGetPet - 1458412532
+[INFO] 2026-04-24 16:41:51 ExtentReportManager.onTestStart() - TestName: testGetPet | Thread-Thread[#36,TestNG-PoolService-3,5,main]
+[INFO] 2026-04-24 16:41:51 ExtentReportManager.onTestStart() - TestName: testGetPet | Thread-Thread[#34,TestNG-PoolService-1,5,main]
+[INFO] 2026-04-24 16:41:51 ExtentReportManager.onTestStart() - Test ThreadId: testGetPet - 1683526622
+[INFO] 2026-04-24 16:41:51 ExtentReportManager.onTestStart() - Test ThreadId: testGetPet - 781650182
+[INFO] 2026-04-24 16:41:51 ExtentReportManager.onTestStart() - TestName: testGetPet | Thread-Thread[#37,TestNG-PoolService-4,5,main]
+[INFO] 2026-04-24 16:41:51 ExtentReportManager.onTestStart() - Test ThreadId: testGetPet - 695934755
+[INFO] 2026-04-24 16:41:51 PetTest.testGetPet() - PetId: 11011
+[INFO] 2026-04-24 16:41:51 PetTest.testGetPet() - PetId: 11022
+[INFO] 2026-04-24 16:41:51 PetTest.testGetPet() - PetId: 11044
+[INFO] 2026-04-24 16:41:51 PetTest.testGetPet() - PetId: 11033
+[INFO] 2026-04-24 16:41:51 ExtentReportManager.onTestStart() - TestName: testGetUser | Thread-Thread[#38,TestNG-PoolService-1,5,main]
+[INFO] 2026-04-24 16:41:51 ExtentReportManager.onTestStart() - TestName: testGetUser | Thread-Thread[#42,TestNG-PoolService-5,5,main]
+[INFO] 2026-04-24 16:41:51 ExtentReportManager.onTestStart() - Test ThreadId: testGetUser - 2068308716
+[INFO] 2026-04-24 16:41:51 ExtentReportManager.onTestStart() - TestName: testGetUser | Thread-Thread[#41,TestNG-PoolService-4,5,main]
+[INFO] 2026-04-24 16:41:51 ExtentReportManager.onTestStart() - Test ThreadId: testGetUser - 1481233957
+[INFO] 2026-04-24 16:41:51 ExtentReportManager.onTestStart() - TestName: testGetUser | Thread-Thread[#40,TestNG-PoolService-3,5,main]
+[INFO] 2026-04-24 16:41:51 ExtentReportManager.onTestStart() - Test ThreadId: testGetUser - 1686458728
+[INFO] 2026-04-24 16:41:51 ExtentReportManager.onTestStart() - TestName: testGetUser | Thread-Thread[#39,TestNG-PoolService-2,5,main]
+[INFO] 2026-04-24 16:41:51 ExtentReportManager.onTestStart() - Test ThreadId: testGetUser - 103896758
+[INFO] 2026-04-24 16:41:51 ExtentReportManager.onTestStart() - Test ThreadId: testGetUser - 1048738738
+[INFO] 2026-04-24 16:41:52 ExtentReportManager.onTestStart() - TestName: testUpdatePet | Thread-Thread[#47,TestNG-PoolService-1,5,main]
+[INFO] 2026-04-24 16:41:52 ExtentReportManager.onTestStart() - Test ThreadId: testUpdatePet - 1809481689
+[INFO] 2026-04-24 16:41:52 ExtentReportManager.onTestStart() - TestName: testCreatePet | Thread-Thread[#43,TestNG-PoolService-1,5,main]
+[INFO] 2026-04-24 16:41:52 ExtentReportManager.onTestStart() - TestName: testUpdatePet | Thread-Thread[#50,TestNG-PoolService-4,5,main]
+[INFO] 2026-04-24 16:41:52 ExtentReportManager.onTestStart() - Test ThreadId: testUpdatePet - 32921266
+[INFO] 2026-04-24 16:41:52 ExtentReportManager.onTestStart() - TestName: testCreatePet | Thread-Thread[#45,TestNG-PoolService-3,5,main]
+[INFO] 2026-04-24 16:41:52 ExtentReportManager.onTestStart() - Test ThreadId: testCreatePet - 1350087556
+[INFO] 2026-04-24 16:41:52 ExtentReportManager.onTestStart() - TestName: testCreatePet | Thread-Thread[#46,TestNG-PoolService-4,5,main]
+[INFO] 2026-04-24 16:41:52 ExtentReportManager.onTestStart() - TestName: testUpdatePet | Thread-Thread[#49,TestNG-PoolService-3,5,main]
+[INFO] 2026-04-24 16:41:52 ExtentReportManager.onTestStart() - Test ThreadId: testCreatePet - 1615415457
+[INFO] 2026-04-24 16:41:52 PetTest.testCreatePet() - Creating Pet
+[INFO] 2026-04-24 16:41:52 PetTest.testCreatePet() - Pet Details: api.payload.Pet@5ebf4623
+[INFO] 2026-04-24 16:41:52 ExtentReportManager.onTestStart() - Test ThreadId: testUpdatePet - 1562246285
+[INFO] 2026-04-24 16:41:52 PetTest.testCreatePet() - Creating Pet
+[INFO] 2026-04-24 16:41:52 ExtentReportManager.onTestStart() - TestName: testCreatePet | Thread-Thread[#44,TestNG-PoolService-2,5,main]
+[INFO] 2026-04-24 16:41:52 ExtentReportManager.onTestStart() - Test ThreadId: testCreatePet - 756069929
+[INFO] 2026-04-24 16:41:52 PetTest.testCreatePet() - Creating Pet
+[INFO] 2026-04-24 16:41:52 PetTest.testCreatePet() - Pet Details: api.payload.Pet@23d74c23
+[INFO] 2026-04-24 16:41:52 PetTest.testCreatePet() - Pet Details: api.payload.Pet@6e8ebb00
+[INFO] 2026-04-24 16:41:52 ExtentReportManager.onTestStart() - Test ThreadId: testCreatePet - 1747739664
+[INFO] 2026-04-24 16:41:52 ExtentReportManager.onTestStart() - TestName: testUpdatePet | Thread-Thread[#48,TestNG-PoolService-2,5,main]
+[INFO] 2026-04-24 16:41:52 ExtentReportManager.onTestStart() - Test ThreadId: testUpdatePet - 303410619
+[INFO] 2026-04-24 16:41:52 PetTest.testCreatePet() - Creating Pet
+[INFO] 2026-04-24 16:41:52 PetTest.testCreatePet() - Pet Details: api.payload.Pet@66eb96bd
+[INFO] 2026-04-24 16:41:52 ExtentReportManager.onTestStart() - TestName: testCreateUser | Thread-Thread[#51,TestNG-PoolService-1,5,main]
+[INFO] 2026-04-24 16:41:52 ExtentReportManager.onTestStart() - TestName: testCreateUser | Thread-Thread[#53,TestNG-PoolService-3,5,main]
+[INFO] 2026-04-24 16:41:52 ExtentReportManager.onTestStart() - Test ThreadId: testCreateUser - 636723441
+[INFO] 2026-04-24 16:41:52 ExtentReportManager.onTestStart() - TestName: testCreateUser | Thread-Thread[#52,TestNG-PoolService-2,5,main]
+[INFO] 2026-04-24 16:41:52 ExtentReportManager.onTestStart() - TestName: testCreateUser | Thread-Thread[#54,TestNG-PoolService-4,5,main]
+[INFO] 2026-04-24 16:41:52 ExtentReportManager.onTestStart() - Test ThreadId: testCreateUser - 1488871525
+[INFO] 2026-04-24 16:41:52 ExtentReportManager.onTestStart() - Test ThreadId: testCreateUser - 1982968604
+[INFO] 2026-04-24 16:41:52 ExtentReportManager.onTestStart() - Test ThreadId: testCreateUser - 942417220
+[INFO] 2026-04-24 16:41:52 UserTest.testCreateUser() - Creating user
+[INFO] 2026-04-24 16:41:52 UserTest.testCreateUser() - Creating user
+[INFO] 2026-04-24 16:41:52 UserTest.testCreateUser() - User Details: User {username='testuser33', id=11030, email='c123@gmail.com'}
+[INFO] 2026-04-24 16:41:52 UserTest.testCreateUser() - Creating user
+[INFO] 2026-04-24 16:41:52 UserTest.testCreateUser() - User Details: User {username='testuser11', id=11010, email='a123@gmail.com'}
+[INFO] 2026-04-24 16:41:52 UserTest.testCreateUser() - User Details: User {username='testuser44', id=11040, email='d123@gmail.com'}
+[INFO] 2026-04-24 16:41:52 UserTest.testCreateUser() - Creating user
+[INFO] 2026-04-24 16:41:52 UserTest.testCreateUser() - User Details: User {username='testuser22', id=11020, email='b123@gmail.com'}
+[INFO] 2026-04-24 16:41:52 ExtentReportManager.onTestStart() - TestName: testCreateUser | Thread-Thread[#55,TestNG-PoolService-5,5,main]
+[INFO] 2026-04-24 16:41:52 ExtentReportManager.onTestStart() - Test ThreadId: testCreateUser - 582950233
+[INFO] 2026-04-24 16:41:52 UserTest.testCreateUser() - Creating user
+[INFO] 2026-04-24 16:41:52 UserTest.testCreateUser() - User Details: User {username='testuser55', id=11050, email='e123@gmail.com'}
+[INFO] 2026-04-24 16:41:56 ExtentReportManager.onTestStart() - TestName: testDeletePet | Thread-Thread[#58,TestNG-PoolService-3,5,main]
+[INFO] 2026-04-24 16:41:56 ExtentReportManager.onTestStart() - Test ThreadId: testDeletePet - 642481771
+[INFO] 2026-04-24 16:41:56 ExtentReportManager.onTestStart() - TestName: testDeletePet | Thread-Thread[#56,TestNG-PoolService-1,5,main]
+[INFO] 2026-04-24 16:41:56 ExtentReportManager.onTestStart() - Test ThreadId: testDeletePet - 1052230413
+[INFO] 2026-04-24 16:41:56 ExtentReportManager.onTestStart() - TestName: testDeletePet | Thread-Thread[#59,TestNG-PoolService-4,5,main]
+[INFO] 2026-04-24 16:41:56 ExtentReportManager.onTestStart() - Test ThreadId: testDeletePet - 1079498025
+[INFO] 2026-04-24 16:41:56 ExtentReportManager.onTestStart() - TestName: testDeletePet | Thread-Thread[#57,TestNG-PoolService-2,5,main]
+[INFO] 2026-04-24 16:41:56 ExtentReportManager.onTestStart() - Test ThreadId: testDeletePet - 1354689464
+[INFO] 2026-04-24 16:41:57 ExtentReportManager.onTestStart() - TestName: testDeleteUser | Thread-Thread[#60,TestNG-PoolService-1,5,main]
+[INFO] 2026-04-24 16:41:57 ExtentReportManager.onTestStart() - Test ThreadId: testDeleteUser - 472485974
+[INFO] 2026-04-24 16:41:57 ExtentReportManager.onTestStart() - TestName: testDeleteUser | Thread-Thread[#61,TestNG-PoolService-2,5,main]
+[INFO] 2026-04-24 16:41:57 ExtentReportManager.onTestStart() - Test ThreadId: testDeleteUser - 171053773
+[INFO] 2026-04-24 16:41:57 ExtentReportManager.onTestStart() - TestName: testDeleteUser | Thread-Thread[#63,TestNG-PoolService-4,5,main]
+[INFO] 2026-04-24 16:41:57 ExtentReportManager.onTestStart() - Test ThreadId: testDeleteUser - 636863231
+[INFO] 2026-04-24 16:41:57 ExtentReportManager.onTestStart() - TestName: testDeleteUser | Thread-Thread[#62,TestNG-PoolService-3,5,main]
+[INFO] 2026-04-24 16:41:57 ExtentReportManager.onTestStart() - Test ThreadId: testDeleteUser - 435062547
+[INFO] 2026-04-24 16:41:57 ExtentReportManager.onTestStart() - TestName: testDeleteUser | Thread-Thread[#64,TestNG-PoolService-5,5,main]
+[INFO] 2026-04-24 16:41:57 ExtentReportManager.onTestStart() - Test ThreadId: testDeleteUser - 1798421811
+[INFO] 2026-04-24 16:41:58 ExtentReportManager.onTestStart() - TestName: testUpdateUser | Thread-Thread[#69,TestNG-PoolService-5,5,main]
+[INFO] 2026-04-24 16:41:58 ExtentReportManager.onTestStart() - Test ThreadId: testUpdateUser - 1204019549
+[INFO] 2026-04-24 16:41:58 ExtentReportManager.onTestStart() - TestName: testUpdateUser | Thread-Thread[#65,TestNG-PoolService-1,5,main]
+[INFO] 2026-04-24 16:41:58 ExtentReportManager.onTestStart() - TestName: testUpdateUser | Thread-Thread[#68,TestNG-PoolService-4,5,main]
+[INFO] 2026-04-24 16:41:58 ExtentReportManager.onTestStart() - TestName: testUpdateUser | Thread-Thread[#67,TestNG-PoolService-3,5,main]
+[INFO] 2026-04-24 16:41:58 ExtentReportManager.onTestStart() - Test ThreadId: testUpdateUser - 115943937
+[INFO] 2026-04-24 16:41:58 ExtentReportManager.onTestStart() - TestName: testUpdateUser | Thread-Thread[#66,TestNG-PoolService-2,5,main]
+[INFO] 2026-04-24 16:41:58 ExtentReportManager.onTestStart() - Test ThreadId: testUpdateUser - 1020429973
+[INFO] 2026-04-24 16:41:58 ExtentReportManager.onTestStart() - Test ThreadId: testUpdateUser - 868160226
+[INFO] 2026-04-24 16:41:58 ExtentReportManager.onTestStart() - Test ThreadId: testUpdateUser - 1034319794
+[INFO] 2026-04-24 16:55:14 ExtentReportManager.onTestStart() - TestName: testCreatePet | Thread-Thread[#32,TestNG-PoolService-2,5,main]
+[INFO] 2026-04-24 16:55:14 ExtentReportManager.onTestStart() - TestName: testCreatePet | Thread-Thread[#33,TestNG-PoolService-3,5,main]
+[INFO] 2026-04-24 16:55:14 ExtentReportManager.onTestStart() - TestName: testCreatePet | Thread-Thread[#31,TestNG-PoolService-1,5,main]
+[INFO] 2026-04-24 16:55:14 ExtentReportManager.onTestStart() - Test ThreadId: testCreatePet - 2097353034
+[INFO] 2026-04-24 16:55:14 ExtentReportManager.onTestStart() - TestName: testCreatePet | Thread-Thread[#34,TestNG-PoolService-4,5,main]
+[INFO] 2026-04-24 16:55:14 ExtentReportManager.onTestStart() - Test ThreadId: testCreatePet - 516116725
+[INFO] 2026-04-24 16:55:14 ExtentReportManager.onTestStart() - Test ThreadId: testCreatePet - 912107728
+[INFO] 2026-04-24 16:55:14 ExtentReportManager.onTestStart() - Test ThreadId: testCreatePet - 822299121
+[INFO] 2026-04-24 16:55:14 ExtentReportManager.onTestStart() - TestName: testCreateUser | Thread-Thread[#37,TestNG-PoolService-3,5,main]
+[INFO] 2026-04-24 16:55:14 ExtentReportManager.onTestStart() - Test ThreadId: testCreateUser - 429292906
+[INFO] 2026-04-24 16:55:14 ExtentReportManager.onTestStart() - TestName: testCreateUser | Thread-Thread[#38,TestNG-PoolService-4,5,main]
+[INFO] 2026-04-24 16:55:14 ExtentReportManager.onTestStart() - Test ThreadId: testCreateUser - 340278860
+[INFO] 2026-04-24 16:55:14 ExtentReportManager.onTestStart() - TestName: testCreateUser | Thread-Thread[#36,TestNG-PoolService-2,5,main]
+[INFO] 2026-04-24 16:55:14 ExtentReportManager.onTestStart() - TestName: testCreateUser | Thread-Thread[#39,TestNG-PoolService-5,5,main]
+[INFO] 2026-04-24 16:55:14 ExtentReportManager.onTestStart() - TestName: testCreateUser | Thread-Thread[#35,TestNG-PoolService-1,5,main]
+[INFO] 2026-04-24 16:55:14 ExtentReportManager.onTestStart() - Test ThreadId: testCreateUser - 1042156286
+[INFO] 2026-04-24 16:55:14 ExtentReportManager.onTestStart() - Test ThreadId: testCreateUser - 863396622
+[INFO] 2026-04-24 16:55:14 ExtentReportManager.onTestStart() - Test ThreadId: testCreateUser - 1886405060
+[INFO] 2026-04-24 16:55:18 ExtentReportManager.onTestStart() - TestName: testGetPet | Thread-Thread[#41,TestNG-PoolService-2,5,main]
+[INFO] 2026-04-24 16:55:18 ExtentReportManager.onTestStart() - Test ThreadId: testGetPet - 819769676
+[INFO] 2026-04-24 16:55:18 PetTest.testGetPet() - PetId: 11022
+[INFO] 2026-04-24 16:55:18 ExtentReportManager.onTestStart() - TestName: testGetPet | Thread-Thread[#40,TestNG-PoolService-1,5,main]
+[INFO] 2026-04-24 16:55:18 ExtentReportManager.onTestStart() - Test ThreadId: testGetPet - 1135203875
+[INFO] 2026-04-24 16:55:18 PetTest.testGetPet() - PetId: 11011
+[INFO] 2026-04-24 16:55:18 ExtentReportManager.onTestStart() - TestName: testGetPet | Thread-Thread[#42,TestNG-PoolService-3,5,main]
+[INFO] 2026-04-24 16:55:19 ExtentReportManager.onTestStart() - Test ThreadId: testGetPet - 1867881974
+[INFO] 2026-04-24 16:55:19 PetTest.testGetPet() - PetId: 11033
+[INFO] 2026-04-24 16:55:19 ExtentReportManager.onTestStart() - TestName: testGetUser | Thread-Thread[#46,TestNG-PoolService-3,5,main]
+[INFO] 2026-04-24 16:55:19 ExtentReportManager.onTestStart() - Test ThreadId: testGetUser - 36723074
+[INFO] 2026-04-24 16:55:19 ExtentReportManager.onTestStart() - TestName: testGetUser | Thread-Thread[#45,TestNG-PoolService-2,5,main]
+[INFO] 2026-04-24 16:55:19 ExtentReportManager.onTestStart() - Test ThreadId: testGetUser - 1426171428
+[INFO] 2026-04-24 16:55:19 ExtentReportManager.onTestStart() - TestName: testGetUser | Thread-Thread[#47,TestNG-PoolService-4,5,main]
+[INFO] 2026-04-24 16:55:19 ExtentReportManager.onTestStart() - Test ThreadId: testGetUser - 737452740
+[INFO] 2026-04-24 16:55:19 ExtentReportManager.onTestStart() - TestName: testGetPet | Thread-Thread[#43,TestNG-PoolService-4,5,main]
+[INFO] 2026-04-24 16:55:19 ExtentReportManager.onTestStart() - Test ThreadId: testGetPet - 1204499051
+[INFO] 2026-04-24 16:55:19 PetTest.testGetPet() - PetId: 11044
+[INFO] 2026-04-24 16:55:19 ExtentReportManager.onTestStart() - TestName: testGetUser | Thread-Thread[#44,TestNG-PoolService-1,5,main]
+[INFO] 2026-04-24 16:55:19 ExtentReportManager.onTestStart() - Test ThreadId: testGetUser - 1656973176
+[INFO] 2026-04-24 16:55:19 ExtentReportManager.onTestStart() - TestName: testGetUser | Thread-Thread[#48,TestNG-PoolService-5,5,main]
+[INFO] 2026-04-24 16:55:19 ExtentReportManager.onTestStart() - Test ThreadId: testGetUser - 458458551
+[INFO] 2026-04-24 16:55:22 ExtentReportManager.onTestStart() - TestName: testUpdatePet | Thread-Thread[#52,TestNG-PoolService-4,5,main]
+[INFO] 2026-04-24 16:55:22 ExtentReportManager.onTestStart() - TestName: testUpdatePet | Thread-Thread[#50,TestNG-PoolService-2,5,main]
+[INFO] 2026-04-24 16:55:22 ExtentReportManager.onTestStart() - Test ThreadId: testUpdatePet - 1251042607
+[INFO] 2026-04-24 16:55:22 ExtentReportManager.onTestStart() - TestName: testUpdatePet | Thread-Thread[#49,TestNG-PoolService-1,5,main]
+[INFO] 2026-04-24 16:55:22 ExtentReportManager.onTestStart() - Test ThreadId: testUpdatePet - 881025141
+[INFO] 2026-04-24 16:55:22 ExtentReportManager.onTestStart() - Test ThreadId: testUpdatePet - 1562196400
+[INFO] 2026-04-24 16:55:22 ExtentReportManager.onTestStart() - TestName: testUpdatePet | Thread-Thread[#51,TestNG-PoolService-3,5,main]
+[INFO] 2026-04-24 16:55:22 ExtentReportManager.onTestStart() - Test ThreadId: testUpdatePet - 1515207871
+[INFO] 2026-04-24 16:55:22 ExtentReportManager.onTestStart() - TestName: testUpdateUser | Thread-Thread[#57,TestNG-PoolService-5,5,main]
+[INFO] 2026-04-24 16:55:22 ExtentReportManager.onTestStart() - Test ThreadId: testUpdateUser - 767691705
+[INFO] 2026-04-24 16:55:22 ExtentReportManager.onTestStart() - TestName: testUpdateUser | Thread-Thread[#56,TestNG-PoolService-4,5,main]
+[INFO] 2026-04-24 16:55:22 ExtentReportManager.onTestStart() - TestName: testUpdateUser | Thread-Thread[#53,TestNG-PoolService-1,5,main]
+[INFO] 2026-04-24 16:55:22 ExtentReportManager.onTestStart() - Test ThreadId: testUpdateUser - 75674473
+[INFO] 2026-04-24 16:55:22 ExtentReportManager.onTestStart() - Test ThreadId: testUpdateUser - 172561055
+[INFO] 2026-04-24 16:55:22 ExtentReportManager.onTestStart() - TestName: testUpdateUser | Thread-Thread[#54,TestNG-PoolService-2,5,main]
+[INFO] 2026-04-24 16:55:22 ExtentReportManager.onTestStart() - Test ThreadId: testUpdateUser - 1899848161
+[INFO] 2026-04-24 16:55:22 ExtentReportManager.onTestStart() - TestName: testUpdateUser | Thread-Thread[#55,TestNG-PoolService-3,5,main]
+[INFO] 2026-04-24 16:55:22 ExtentReportManager.onTestStart() - Test ThreadId: testUpdateUser - 2083207875
+[INFO] 2026-04-24 16:55:26 ExtentReportManager.onTestStart() - TestName: testDeletePet | Thread-Thread[#58,TestNG-PoolService-1,5,main]
+[INFO] 2026-04-24 16:55:26 ExtentReportManager.onTestStart() - Test ThreadId: testDeletePet - 1340192005
+[INFO] 2026-04-24 16:55:26 ExtentReportManager.onTestStart() - TestName: testDeletePet | Thread-Thread[#60,TestNG-PoolService-3,5,main]
+[INFO] 2026-04-24 16:55:26 ExtentReportManager.onTestStart() - TestName: testDeletePet | Thread-Thread[#61,TestNG-PoolService-4,5,main]
+[INFO] 2026-04-24 16:55:26 ExtentReportManager.onTestStart() - Test ThreadId: testDeletePet - 208940784
+[INFO] 2026-04-24 16:55:26 ExtentReportManager.onTestStart() - Test ThreadId: testDeletePet - 1799480654
+[INFO] 2026-04-24 16:55:26 ExtentReportManager.onTestStart() - TestName: testDeletePet | Thread-Thread[#59,TestNG-PoolService-2,5,main]
+[INFO] 2026-04-24 16:55:26 ExtentReportManager.onTestStart() - Test ThreadId: testDeletePet - 100069630
+[INFO] 2026-04-24 16:55:26 ExtentReportManager.onTestStart() - TestName: testDeleteUser | Thread-Thread[#63,TestNG-PoolService-2,5,main]
+[INFO] 2026-04-24 16:55:26 ExtentReportManager.onTestStart() - Test ThreadId: testDeleteUser - 843587343
+[INFO] 2026-04-24 16:55:26 ExtentReportManager.onTestStart() - TestName: testDeleteUser | Thread-Thread[#62,TestNG-PoolService-1,5,main]
+[INFO] 2026-04-24 16:55:26 ExtentReportManager.onTestStart() - TestName: testDeleteUser | Thread-Thread[#64,TestNG-PoolService-3,5,main]
+[INFO] 2026-04-24 16:55:26 ExtentReportManager.onTestStart() - Test ThreadId: testDeleteUser - 1108336799
+[INFO] 2026-04-24 16:55:26 ExtentReportManager.onTestStart() - TestName: testDeleteUser | Thread-Thread[#66,TestNG-PoolService-5,5,main]
+[INFO] 2026-04-24 16:55:26 ExtentReportManager.onTestStart() - Test ThreadId: testDeleteUser - 760271631
+[INFO] 2026-04-24 16:55:26 ExtentReportManager.onTestStart() - TestName: testDeleteUser | Thread-Thread[#65,TestNG-PoolService-4,5,main]
+[INFO] 2026-04-24 16:55:26 ExtentReportManager.onTestStart() - Test ThreadId: testDeleteUser - 142467489
+[INFO] 2026-04-24 16:55:26 ExtentReportManager.onTestStart() - Test ThreadId: testDeleteUser - 620207635

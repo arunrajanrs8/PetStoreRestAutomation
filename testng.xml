@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="PetUserSuite">
+<suite name="PetUserSuite" parallel="classes" thread-count="2">
 <listeners>
 	<listener class-name="api.reporting.ExtentReportManager"></listener>
 </listeners>

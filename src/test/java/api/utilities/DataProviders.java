@@ -13,7 +13,7 @@ import api.payload.User;
 
 public class DataProviders {
 	
-	@DataProvider(name ="UserData")
+	@DataProvider(name ="UserData", parallel = true)
 	public Object[][] getUserDetails(Method method) throws IOException {
 		
 		String path = System.getProperty("user.dir")+"//TestData//UserDetails.xlsx";
@@ -41,7 +41,7 @@ public class DataProviders {
 	    return userData;
 	}
 	
-	@DataProvider(name ="UserName")
+	@DataProvider(name ="UserName", parallel = true)
 	public String[] getUserName(Method method) throws IOException {
 		
 		String path = System.getProperty("user.dir")+"//TestData//UserDetails.xlsx";
@@ -61,7 +61,7 @@ public class DataProviders {
 		return userName;	
 	}
 	
-	@DataProvider(name ="PetData")
+	@DataProvider(name ="PetData", parallel = true)
 	public Object[][] getPetDetails(Method method) throws IOException {
 		
 		String path = System.getProperty("user.dir")+"//TestData//UserDetails.xlsx";
@@ -99,7 +99,7 @@ public class DataProviders {
 	    return userData;
 	}
 	
-	@DataProvider(name ="PetId")
+	@DataProvider(name ="PetId", parallel = true)
 	public Integer[] getPetId(Method method) throws IOException {
 		
 		String path = System.getProperty("user.dir")+"//TestData//UserDetails.xlsx";

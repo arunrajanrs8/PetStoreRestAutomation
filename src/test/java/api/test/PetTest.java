@@ -30,8 +30,6 @@ public class PetTest {
 	@SheetName("PetDetails")
 	public void testCreatePet(Pet petDtls) {
 		
-		logger.info("Creating Pet");
-		logger.info("Pet Details: "+petDtls.toString());
 		Response response = PetEndPoint.createPet(petDtls);
 		Assert.assertEquals(response.getStatusCode(), 200);
 		
@@ -41,7 +39,6 @@ public class PetTest {
 	@SheetName("PetDetails")
 	public void testGetPet(int petId) {
 		
-		logger.info("PetId: "+petId);
 		Response response = PetEndPoint.getPet(petId);
 		Assert.assertEquals(response.getStatusCode(), 200);
 		
@@ -60,8 +57,7 @@ public class PetTest {
 		Response updateResp = PetEndPoint.getPet(petDtls.getId());
 		String petName = updateResp.jsonPath().getString("name");
 		Assert.assertEquals(petName, petDtls.getName());
-		Assert.assertEquals(updateResp.getStatusCode(), 200);
-		
+		Assert.assertEquals(updateResp.getStatusCode(), 200);	
 		
 	}
 	
