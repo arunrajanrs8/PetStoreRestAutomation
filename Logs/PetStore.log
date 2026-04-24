@@ -51,3 +51,43 @@
 [INFO] 2026-04-18 21:11:57 UserTest.testCreateUser() - User Details: User {username='stan.wisozk', id=878598679, email='dalton.fay@example.com'}
 [INFO] 2026-04-18 21:12:07 PetTest.testCreatePet() - Creating Pet
 [INFO] 2026-04-18 21:12:07 PetTest.testCreatePet() - User Details: api.payload.Pet@48971262
+[INFO] 2026-04-24 15:11:45 UserTest.testCreateUser() - Creating user
+[INFO] 2026-04-24 15:11:45 UserTest.testCreateUser() - User Details: User {username='testuser11', id=11010, email='a123@gmail.com'}
+[INFO] 2026-04-24 15:11:48 UserTest.testCreateUser() - Creating user
+[INFO] 2026-04-24 15:11:48 UserTest.testCreateUser() - User Details: User {username='testuser22', id=11020, email='b123@gmail.com'}
+[INFO] 2026-04-24 15:11:49 UserTest.testCreateUser() - Creating user
+[INFO] 2026-04-24 15:11:49 UserTest.testCreateUser() - User Details: User {username='testuser33', id=11030, email='c123@gmail.com'}
+[INFO] 2026-04-24 15:11:50 UserTest.testCreateUser() - Creating user
+[INFO] 2026-04-24 15:11:50 UserTest.testCreateUser() - User Details: User {username='testuser44', id=11040, email='d123@gmail.com'}
+[INFO] 2026-04-24 15:11:51 UserTest.testCreateUser() - Creating user
+[INFO] 2026-04-24 15:11:51 UserTest.testCreateUser() - User Details: User {username='testuser55', id=11050, email='e123@gmail.com'}
+[INFO] 2026-04-24 15:12:24 PetTest.testCreatePet() - Creating Pet
+[INFO] 2026-04-24 15:12:24 PetTest.testCreatePet() - Pet Details: api.payload.Pet@dc6a186
+[INFO] 2026-04-24 15:12:25 PetTest.testCreatePet() - Creating Pet
+[INFO] 2026-04-24 15:12:25 PetTest.testCreatePet() - Pet Details: api.payload.Pet@2fedae96
+[INFO] 2026-04-24 15:12:27 PetTest.testCreatePet() - Creating Pet
+[INFO] 2026-04-24 15:12:27 PetTest.testCreatePet() - Pet Details: api.payload.Pet@7f39bcb5
+[INFO] 2026-04-24 15:12:28 PetTest.testCreatePet() - Creating Pet
+[INFO] 2026-04-24 15:12:28 PetTest.testCreatePet() - Pet Details: api.payload.Pet@2806fe58
+[INFO] 2026-04-24 15:23:12 UserTest.testCreateUser() - Creating user
+[INFO] 2026-04-24 15:23:12 UserTest.testCreateUser() - User Details: User {username='testuser11', id=11010, email='a123@gmail.com'}
+[INFO] 2026-04-24 15:23:15 UserTest.testCreateUser() - Creating user
+[INFO] 2026-04-24 15:23:15 UserTest.testCreateUser() - User Details: User {username='testuser22', id=11020, email='b123@gmail.com'}
+[INFO] 2026-04-24 15:23:17 UserTest.testCreateUser() - Creating user
+[INFO] 2026-04-24 15:23:17 UserTest.testCreateUser() - User Details: User {username='testuser33', id=11030, email='c123@gmail.com'}
+[INFO] 2026-04-24 15:23:18 UserTest.testCreateUser() - Creating user
+[INFO] 2026-04-24 15:23:18 UserTest.testCreateUser() - User Details: User {username='testuser44', id=11040, email='d123@gmail.com'}
+[INFO] 2026-04-24 15:23:19 UserTest.testCreateUser() - Creating user
+[INFO] 2026-04-24 15:23:19 UserTest.testCreateUser() - User Details: User {username='testuser55', id=11050, email='e123@gmail.com'}
+[INFO] 2026-04-24 15:23:52 PetTest.testCreatePet() - Creating Pet
+[INFO] 2026-04-24 15:23:52 PetTest.testCreatePet() - Pet Details: api.payload.Pet@60eb9c29
+[INFO] 2026-04-24 15:23:53 PetTest.testCreatePet() - Creating Pet
+[INFO] 2026-04-24 15:23:53 PetTest.testCreatePet() - Pet Details: api.payload.Pet@56d4481f
+[INFO] 2026-04-24 15:23:54 PetTest.testCreatePet() - Creating Pet
+[INFO] 2026-04-24 15:23:54 PetTest.testCreatePet() - Pet Details: api.payload.Pet@4c541b00
+[INFO] 2026-04-24 15:23:56 PetTest.testCreatePet() - Creating Pet
+[INFO] 2026-04-24 15:23:56 PetTest.testCreatePet() - Pet Details: api.payload.Pet@618d2191
+[INFO] 2026-04-24 15:23:57 PetTest.testGetPet() - PetId: 11011
+[INFO] 2026-04-24 15:23:58 PetTest.testGetPet() - PetId: 11022
+[INFO] 2026-04-24 15:23:59 PetTest.testGetPet() - PetId: 11033
+[INFO] 2026-04-24 15:24:00 PetTest.testGetPet() - PetId: 11044

@@ -8,33 +8,23 @@ import org.testng.annotations.Test;
 import com.github.javafaker.Faker;
 import api.endpoints.UserEndPoint;
 import api.payload.User;
+import api.utilities.DataProviders;
+import api.utilities.SheetName;
 import io.restassured.response.Response;
 
 public class UserTest {
 	
-	Faker faker;
-	User usrDtls;
-	
 	public Logger logger = LogManager.getLogger(this.getClass());
+	Faker faker;
 	
 	@BeforeClass
 	public void setUpData() {
-		
 		faker = new Faker();
-		usrDtls = new User();
-		
-		usrDtls.setId(faker.idNumber().hashCode());
-		usrDtls.setUsername(faker.name().username());
-		usrDtls.setFirstName(faker.name().firstName());
-		usrDtls.setLastName(faker.name().lastName());
-		usrDtls.setEmail(faker.internet().safeEmailAddress());
-		usrDtls.setPassword(faker.internet().password(5, 10));
-		usrDtls.setPhone(faker.phoneNumber().cellPhone());
-		
 	}
 	
-	@Test(priority=1,groups = {"UserAPI"})
-	public void testCreateUser() {
+	@Test(priority=1, dataProvider="UserData", dataProviderClass=DataProviders.class, groups = {"UserAPI-CreateUser"})
+	@SheetName("UserDetails")
+	public void testCreateUser(User usrDtls) {
 		
 		logger.info("Creating user");
 		logger.info("User Details: "+usrDtls.toString());
@@ -44,30 +34,32 @@ public class UserTest {
 		
 	}
 	
-	@Test(priority=2,groups = {"UserAPI"})
-	public void testGetUser() {
+	@Test(priority=2, dataProvider="UserName", dataProviderClass=DataProviders.class, groups = {"UserAPI-GetUser"})
+	@SheetName("UserDetails")
+	public void testGetUser(String userName) {
 		
-		Response response = UserEndPoint.getUser(this.usrDtls.getUsername());
+		Response response = UserEndPoint.getUser(userName);
 		response.then().log().all();
 		Assert.assertEquals(response.getStatusCode(), 200);
 		
 	}
 	
-	@Test(priority=3,groups = {"UserAPI"})
-	public void testUpdateUser() {
+	@Test(priority=3, dataProvider="UserData", dataProviderClass=DataProviders.class, groups = {"UserAPI-UpdateUser"})
+	@SheetName("UserDetails")
+	public void testUpdateUser(User usrDtls) {
 		
 		//update certain user Details
 		usrDtls.setFirstName(faker.name().firstName());
 		usrDtls.setLastName(faker.name().lastName());
 		usrDtls.setEmail(faker.internet().safeEmailAddress());
 		
-		Response response = UserEndPoint.updateUser(this.usrDtls.getUsername(), usrDtls);
+		Response response = UserEndPoint.updateUser(usrDtls.getUsername(), usrDtls);
 		response.then().log().all();
 		response.then().log().body().statusCode(200);
 		Assert.assertEquals(response.getStatusCode(), 200);
 		
 		//Checking data after update
-		Response updateResp = UserEndPoint.getUser(this.usrDtls.getUsername());
+		Response updateResp = UserEndPoint.getUser(usrDtls.getUsername());
 		
 		String firstName = updateResp.jsonPath().getString("firstName");
 		Assert.assertEquals(firstName, usrDtls.getFirstName());
@@ -80,14 +72,15 @@ public class UserTest {
 		
 	}
 	
-	@Test(priority=4,groups = {"UserAPI"})
-	public void testDeleteUser() {
+	@Test(priority=4, dataProvider="UserName", dataProviderClass=DataProviders.class, groups = {"UserAPI-DeleteUser"})
+	@SheetName("UserDetails")
+	public void testDeleteUser(String userName) {
 		
-		Response response = UserEndPoint.deleteUser(this.usrDtls.getUsername());
+		Response response = UserEndPoint.deleteUser(userName);
 		response.then().log().all();
 		Assert.assertEquals(response.getStatusCode(), 200);
 		
-		Response delRes = UserEndPoint.getUser(this.usrDtls.getUsername());
+		Response delRes = UserEndPoint.getUser(userName);
 		Assert.assertEquals(delRes.getStatusCode(), 404);
 		String message = delRes.jsonPath().getString("message");
 		Assert.assertEquals(message, "User not found");

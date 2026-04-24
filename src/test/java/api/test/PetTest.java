@@ -1,63 +1,34 @@
 package api.test;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
 import com.github.javafaker.Faker;
-
 import api.endpoints.PetEndPoint;
-import api.payload.Category;
 import api.payload.Pet;
-import api.payload.Tag;
+import api.utilities.DataProviders;
+import api.utilities.SheetName;
 import io.restassured.response.Response;
 
 public class PetTest {
 	
-	Faker faker;
-	Pet petDtls;
-	String apiKey="";
-	
 	public Logger logger = LogManager.getLogger(this.getClass());
+	Faker faker;
+	String apiKey="";
 	
 	@BeforeClass
 	public void setUpData() {
 		
 		faker = new Faker();
-		petDtls = new Pet();
-		
 		apiKey = faker.internet().uuid();
-		
-		List<String> photourl = new ArrayList<String>();
-		photourl.add(faker.internet().url());
-		photourl.add(faker.internet().url());
-		photourl.add(faker.internet().url());
-		
-		Category category = new Category();
-		category.setId(faker.idNumber().hashCode());
-		category.setName(faker.animal().name());
-
-		Tag tag = new Tag();
-		tag.setId(faker.idNumber().hashCode());
-		tag.setName(faker.name().name());
-
-		petDtls.setId(faker.idNumber().hashCode());
-		petDtls.setCategory(category);
-		petDtls.setName(faker.name().name());
-		petDtls.setPhotoUrls(photourl);
-		petDtls.setTags(Arrays.asList(tag));
-		petDtls.setStatus("Available");
 		
 	}
 	
-	@Test(priority=1,groups = {"PetAPI"})
-	public void testCreatePet() {
+	@Test(priority=1, dataProvider="PetData", dataProviderClass=DataProviders.class, groups = {"PetAPI-CreatePet"})
+	@SheetName("PetDetails")
+	public void testCreatePet(Pet petDtls) {
 		
 		logger.info("Creating Pet");
 		logger.info("Pet Details: "+petDtls.toString());
@@ -66,16 +37,19 @@ public class PetTest {
 		
 	}
 	
-	@Test(priority=2,groups = {"PetAPI"})
-	public void testGetPet() {
+	@Test(priority=2, dataProvider="PetId", dataProviderClass=DataProviders.class, groups = {"PetAPI-GetPet"})
+	@SheetName("PetDetails")
+	public void testGetPet(int petId) {
 		
-		Response response = PetEndPoint.getPet(this.petDtls.getId());
+		logger.info("PetId: "+petId);
+		Response response = PetEndPoint.getPet(petId);
 		Assert.assertEquals(response.getStatusCode(), 200);
 		
 	}
 	
-	@Test(priority=3,groups = {"PetAPI"})
-	public void testUpdatePet() {
+	@Test(priority=3, dataProvider="PetData", dataProviderClass=DataProviders.class, groups = {"PetAPI-UpdatePet"})
+	@SheetName("PetDetails")
+	public void testUpdatePet(Pet petDtls) {
 		
 		petDtls.setName(faker.name().name());
 		Response response = PetEndPoint.updatePet(petDtls);
@@ -83,8 +57,7 @@ public class PetTest {
 		Assert.assertEquals(response.getStatusCode(), 200);
 		
 		//Checking data after update
-		Response updateResp = PetEndPoint.getPet(this.petDtls.getId());
-		
+		Response updateResp = PetEndPoint.getPet(petDtls.getId());
 		String petName = updateResp.jsonPath().getString("name");
 		Assert.assertEquals(petName, petDtls.getName());
 		Assert.assertEquals(updateResp.getStatusCode(), 200);
@@ -92,13 +65,14 @@ public class PetTest {
 		
 	}
 	
-	@Test(priority=4,groups = {"PetAPI"})
-	public void testDeletePet() {
+	@Test(priority=4, dataProvider="PetId", dataProviderClass=DataProviders.class, groups = {"PetAPI-DeletePet"})
+	@SheetName("PetDetails")
+	public void testDeletePet(int petId) {
 		
-		Response response = PetEndPoint.deletePet(this.petDtls.getId(),apiKey);
+		Response response = PetEndPoint.deletePet(petId,apiKey);
 		Assert.assertEquals(response.getStatusCode(), 200);
 		
-		Response delRes = PetEndPoint.getPet(this.petDtls.getId());
+		Response delRes = PetEndPoint.getPet(petId);
 		Assert.assertEquals(delRes.getStatusCode(), 404);
 		String message = delRes.jsonPath().getString("message");
 		Assert.assertEquals(message, "Pet not found");

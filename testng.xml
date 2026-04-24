@@ -5,9 +5,8 @@
 </listeners>
   <test name="PetTest">
     <classes>
-      <class name="api.test.DataDrivenTests"/>
-      <!-- <class name="api.test.UserTest"></class>
-      <class name="api.test.PetTest"></class> -->
+      <class name="api.test.UserTest"></class>
+      <class name="api.test.PetTest"></class>
     </classes>
   </test> <!-- PetTest -->
 </suite> <!-- PetUserSuite -->
