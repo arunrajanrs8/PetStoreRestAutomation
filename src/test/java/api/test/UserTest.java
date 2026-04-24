@@ -46,7 +46,7 @@ public class UserTest {
 	@SheetName("UserDetails")
 	public void testUpdateUser(User usrDtls) {
 		
-		//update certain user Details
+		//update certain user details
 		usrDtls.setFirstName(faker.name().firstName());
 		usrDtls.setLastName(faker.name().lastName());
 		usrDtls.setEmail(faker.internet().safeEmailAddress());
