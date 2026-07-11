@@ -81,6 +81,8 @@ public class UserTest {
 		Assert.assertEquals(delRes.getStatusCode(), 404);
 		String message = delRes.jsonPath().getString("message");
 		Assert.assertEquals(message, "User not found");
+
+
 		
 	}
 	
