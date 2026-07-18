@@ -24,7 +24,7 @@ public class UserEndPoint {
 				.accept(ContentType.JSON)
 				.body(userDtls)
 			.when()
-				.post(getURL().getString("post_url"));
+				.post(getURL().getString("post_userurl"));
 		
 		return response;
 	}
@@ -35,7 +35,7 @@ public class UserEndPoint {
 				.filter(new RestAssuredFilter())
 				.pathParam("username", userName)
 			.when()
-				.get(getURL().getString("get_url"));
+				.get(getURL().getString("get_userurl"));
 
 		return response;
 	}
@@ -49,7 +49,7 @@ public class UserEndPoint {
 				.pathParam("username", userName)
 				.body(userDtls)
 			.when()
-				.put(getURL().getString("update_url"));
+				.put(getURL().getString("update_userurl"));
 
 		return response;
 	}
@@ -60,7 +60,7 @@ public class UserEndPoint {
 				.filter(new RestAssuredFilter())
 				.pathParam("username", userName)
 			.when()
-				.delete(getURL().getString("delete_url"));
+				.delete(getURL().getString("delete_userurl"));
 
 		return response;
 	}
