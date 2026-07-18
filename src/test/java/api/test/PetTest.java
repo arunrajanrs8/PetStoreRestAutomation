@@ -7,7 +7,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import com.github.javafaker.Faker;
 import api.endpoints.PetEndPoint;
-import api.payload.Pet;
+import api.payload.PetLombok;
 import api.utilities.DataProviders;
 import api.utilities.SheetName;
 import io.restassured.response.Response;
@@ -20,15 +20,13 @@ public class PetTest {
 	
 	@BeforeClass
 	public void setUpData() {
-		
 		faker = new Faker();
 		apiKey = faker.internet().uuid();
-		
 	}
 	
 	@Test(priority=1, dataProvider="PetData", dataProviderClass=DataProviders.class, groups = {"PetAPI-CreatePet"})
 	@SheetName("PetDetails")
-	public void testCreatePet(Pet petDtls) {
+	public void testCreatePet(PetLombok petDtls) {
 		
 		Response response = PetEndPoint.createPet(petDtls);
 		Assert.assertEquals(response.getStatusCode(), 200);
@@ -46,7 +44,7 @@ public class PetTest {
 	
 	@Test(priority=3, dataProvider="PetData", dataProviderClass=DataProviders.class, groups = {"PetAPI-UpdatePet"})
 	@SheetName("PetDetails")
-	public void testUpdatePet(Pet petDtls) {
+	public void testUpdatePet(PetLombok petDtls) {
 		
 		petDtls.setName(faker.name().name());
 		Response response = PetEndPoint.updatePet(petDtls);

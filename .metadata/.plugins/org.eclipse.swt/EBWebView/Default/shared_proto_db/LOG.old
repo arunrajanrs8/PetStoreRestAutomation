@@ -1,2 +1,3 @@
-2026/07/11-12:30:52.026 2858 Creating DB D:\RestAssuredAPI\PetStoreRestAutomation\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\shared_proto_db since it was missing.
-2026/07/11-12:30:52.030 2858 Reusing MANIFEST D:\RestAssuredAPI\PetStoreRestAutomation\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\shared_proto_db/MANIFEST-000001
+2026/07/18-12:00:15.120 48a0 Reusing MANIFEST D:\RestAssuredAPI\PetStoreRestAutomation\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\shared_proto_db/MANIFEST-000001
+2026/07/18-12:00:15.120 48a0 Recovering log #3
+2026/07/18-12:00:15.123 48a0 Reusing old log D:\RestAssuredAPI\PetStoreRestAutomation\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\shared_proto_db/000003.log 

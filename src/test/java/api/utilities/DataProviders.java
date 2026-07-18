@@ -2,13 +2,14 @@ package api.utilities;
 
 import java.io.IOException;
 import java.lang.reflect.Method;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 import org.testng.annotations.DataProvider;
-import api.payload.Category;
-import api.payload.Pet;
-import api.payload.Tag;
+import api.payload.PetLombok;
+import api.payload.PetLombok.CategoryCustom;
+import api.payload.PetLombok.TagCustom;
 import api.payload.User;
 
 public class DataProviders {
@@ -76,22 +77,24 @@ public class DataProviders {
 
 	    for (int i = 1; i <= rowNum; i++) {
 	    	
-	        Pet petDtls = new Pet();
-	        Category category = new Category();
-	        Tag tag = new Tag();
-	        
-	        petDtls.setId(Integer.parseInt(utl.getCellData(sheetName, i, 0)));
-	        category.setId(Integer.parseInt(utl.getCellData(sheetName, i, 1)));
-			category.setName(utl.getCellData(sheetName, i, 2));
-			petDtls.setCategory(category);
-			petDtls.setName(utl.getCellData(sheetName, i, 3));
+	    	Integer petId = Integer.parseInt(utl.getCellData(sheetName, i, 0));
+	    	String petName = utl.getCellData(sheetName, i, 3);
+	    	Integer categoryId = Integer.parseInt(utl.getCellData(sheetName, i, 1));
+	    	String categoryName = utl.getCellData(sheetName, i, 2);
+	        CategoryCustom catDtls = new CategoryCustom(categoryId, categoryName);
 			String photoUrls = utl.getCellData(sheetName, i, 4);
-			List<String> urlList = Arrays.stream(photoUrls.split(",")).map(String::trim).collect(Collectors.toList());
-			petDtls.setPhotoUrls(urlList);
-			tag.setId(Integer.parseInt(utl.getCellData(sheetName, i, 5)));
-			tag.setName(utl.getCellData(sheetName, i, 6));
-			petDtls.setTags(Arrays.asList(tag));
-			petDtls.setStatus(utl.getCellData(sheetName, i, 7));
+			List<String> photoUrlList = Arrays.stream(photoUrls.split(",")).map(String::trim).collect(Collectors.toList());
+			String tagData = utl.getCellData(sheetName, i, 5);
+			List<TagCustom> tagList = new ArrayList<>();
+			for(String tagDtls : tagData.split("\\|")) {
+			    String[] values = tagDtls.split(",");
+			    Integer tagId = Integer.parseInt(values[0].trim());
+			    String tagName = values[1].trim();
+			    tagList.add(new TagCustom(tagId, tagName));
+			}
+			String status = utl.getCellData(sheetName, i, 6);
+			
+			PetLombok petDtls=new PetLombok(petId, catDtls, petName, photoUrlList, tagList, status);
 	        userData[i - 1][0] = petDtls; // store object
 	        
 	    }

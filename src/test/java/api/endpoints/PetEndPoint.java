@@ -4,7 +4,7 @@ import static io.restassured.RestAssured.given;
 
 import java.util.ResourceBundle;
 
-import api.payload.Pet;
+import api.payload.PetLombok;
 import api.reporting.RestAssuredFilter;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
@@ -16,7 +16,7 @@ public class PetEndPoint {
 		return routes;
 	}
 	
-	public static Response createPet(Pet petDtls) {
+	public static Response createPet(PetLombok petDtls) {
 
 		Response response = given()
 				.filter(new RestAssuredFilter())
@@ -40,7 +40,7 @@ public class PetEndPoint {
 		return response;
 	}
 
-	public static Response updatePet(Pet petDtls) {
+	public static Response updatePet(PetLombok petDtls) {
 
 		Response response = given()
 				.filter(new RestAssuredFilter())
