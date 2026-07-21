@@ -2,106 +2,95 @@
 <testng-results ignored="0" total="40" passed="40" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-07-18T15:12:50 IST" name="PetUserSuite" finished-at="2026-07-18T15:13:05 IST" duration-ms="15552">
+  <suite started-at="2026-07-18T21:27:18 IST" name="PetUserSuite" finished-at="2026-07-18T21:27:34 IST" duration-ms="15836">
     <groups>
       <group name="PetAPI-UpdatePet">
-        <method signature="PetTest.testUpdatePet(api.payload.PetLombok)[pri:3, instance:api.test.PetTest@2a7686a7]" name="testUpdatePet" class="api.test.PetTest"/>
+        <method signature="PetTest.testUpdatePet(api.payload.PetLombok)[pri:3, instance:api.test.PetTest@4351c8c3]" name="testUpdatePet" class="api.test.PetTest"/>
       </group> <!-- PetAPI-UpdatePet -->
       <group name="UserAPI-GetUser">
-        <method signature="UserTest.testGetUser(java.lang.String)[pri:2, instance:api.test.UserTest@4bc28c33]" name="testGetUser" class="api.test.UserTest"/>
+        <method signature="UserTest.testGetUser(java.lang.String)[pri:2, instance:api.test.UserTest@5644dc81]" name="testGetUser" class="api.test.UserTest"/>
       </group> <!-- UserAPI-GetUser -->
       <group name="PetAPI-GetPet">
-        <method signature="PetTest.testGetPet(int)[pri:2, instance:api.test.PetTest@2a7686a7]" name="testGetPet" class="api.test.PetTest"/>
+        <method signature="PetTest.testGetPet(int)[pri:2, instance:api.test.PetTest@4351c8c3]" name="testGetPet" class="api.test.PetTest"/>
       </group> <!-- PetAPI-GetPet -->
       <group name="UserAPI-CreateUser">
-        <method signature="UserTest.testCreateUser(api.payload.User)[pri:1, instance:api.test.UserTest@4bc28c33]" name="testCreateUser" class="api.test.UserTest"/>
+        <method signature="UserTest.testCreateUser(api.payload.UserLombok)[pri:1, instance:api.test.UserTest@5644dc81]" name="testCreateUser" class="api.test.UserTest"/>
       </group> <!-- UserAPI-CreateUser -->
       <group name="UserAPI-DeleteUser">
-        <method signature="UserTest.testDeleteUser(java.lang.String)[pri:4, instance:api.test.UserTest@4bc28c33]" name="testDeleteUser" class="api.test.UserTest"/>
+        <method signature="UserTest.testDeleteUser(java.lang.String)[pri:4, instance:api.test.UserTest@5644dc81]" name="testDeleteUser" class="api.test.UserTest"/>
       </group> <!-- UserAPI-DeleteUser -->
       <group name="PetAPI-CreatePet">
-        <method signature="PetTest.testCreatePet(api.payload.PetLombok)[pri:1, instance:api.test.PetTest@2a7686a7]" name="testCreatePet" class="api.test.PetTest"/>
+        <method signature="PetTest.testCreatePet(api.payload.PetLombok)[pri:1, instance:api.test.PetTest@4351c8c3]" name="testCreatePet" class="api.test.PetTest"/>
       </group> <!-- PetAPI-CreatePet -->
       <group name="PetAPI-DeletePet">
-        <method signature="PetTest.testDeletePet(int)[pri:4, instance:api.test.PetTest@2a7686a7]" name="testDeletePet" class="api.test.PetTest"/>
+        <method signature="PetTest.testDeletePet(int)[pri:4, instance:api.test.PetTest@4351c8c3]" name="testDeletePet" class="api.test.PetTest"/>
       </group> <!-- PetAPI-DeletePet -->
       <group name="UserAPI-UpdateUser">
-        <method signature="UserTest.testUpdateUser(api.payload.User)[pri:3, instance:api.test.UserTest@4bc28c33]" name="testUpdateUser" class="api.test.UserTest"/>
+        <method signature="UserTest.testUpdateUser(api.payload.UserLombok)[pri:3, instance:api.test.UserTest@5644dc81]" name="testUpdateUser" class="api.test.UserTest"/>
       </group> <!-- UserAPI-UpdateUser -->
     </groups>
-    <test started-at="2026-07-18T15:12:50 IST" name="PetTest" finished-at="2026-07-18T15:13:05 IST" duration-ms="15552">
+    <test started-at="2026-07-18T21:27:18 IST" name="PetTest" finished-at="2026-07-18T21:27:34 IST" duration-ms="15836">
       <class name="api.test.PetTest">
-        <test-method is-config="true" signature="setUpData()[pri:0, instance:api.test.PetTest@2a7686a7]" started-at="2026-07-18T15:12:50 IST" name="setUpData" finished-at="2026-07-18T15:12:50 IST" duration-ms="44" status="PASS">
+        <test-method is-config="true" signature="setUpData()[pri:0, instance:api.test.PetTest@4351c8c3]" started-at="2026-07-18T21:27:18 IST" name="setUpData" finished-at="2026-07-18T21:27:18 IST" duration-ms="36" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpData -->
-        <test-method signature="testCreatePet(api.payload.PetLombok)[pri:1, instance:api.test.PetTest@2a7686a7]" started-at="2026-07-18T15:12:52 IST" name="testCreatePet" data-provider="PetData" finished-at="2026-07-18T15:12:56 IST" duration-ms="3499" status="PASS">
+        <test-method signature="testCreatePet(api.payload.PetLombok)[pri:1, instance:api.test.PetTest@4351c8c3]" started-at="2026-07-18T21:27:20 IST" name="testCreatePet" data-provider="PetData" finished-at="2026-07-18T21:27:23 IST" duration-ms="3231" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[api.payload.PetLombok@2008edea]]>
+                <![CDATA[api.payload.PetLombok@7c46c13c]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreatePet -->
-        <test-method signature="testCreatePet(api.payload.PetLombok)[pri:1, instance:api.test.PetTest@2a7686a7]" started-at="2026-07-18T15:12:52 IST" name="testCreatePet" data-provider="PetData" finished-at="2026-07-18T15:12:56 IST" duration-ms="3487" status="PASS">
+        <test-method signature="testCreatePet(api.payload.PetLombok)[pri:1, instance:api.test.PetTest@4351c8c3]" started-at="2026-07-18T21:27:20 IST" name="testCreatePet" data-provider="PetData" finished-at="2026-07-18T21:27:23 IST" duration-ms="3146" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[api.payload.PetLombok@f681e0d]]>
+                <![CDATA[api.payload.PetLombok@1ebc47fb]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreatePet -->
-        <test-method signature="testCreatePet(api.payload.PetLombok)[pri:1, instance:api.test.PetTest@2a7686a7]" started-at="2026-07-18T15:12:52 IST" name="testCreatePet" data-provider="PetData" finished-at="2026-07-18T15:12:56 IST" duration-ms="3483" status="PASS">
+        <test-method signature="testCreatePet(api.payload.PetLombok)[pri:1, instance:api.test.PetTest@4351c8c3]" started-at="2026-07-18T21:27:20 IST" name="testCreatePet" data-provider="PetData" finished-at="2026-07-18T21:27:23 IST" duration-ms="3144" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[api.payload.PetLombok@14dfc522]]>
+                <![CDATA[api.payload.PetLombok@3be808c5]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreatePet -->
-        <test-method signature="testCreatePet(api.payload.PetLombok)[pri:1, instance:api.test.PetTest@2a7686a7]" started-at="2026-07-18T15:12:52 IST" name="testCreatePet" data-provider="PetData" finished-at="2026-07-18T15:12:56 IST" duration-ms="3495" status="PASS">
+        <test-method signature="testCreatePet(api.payload.PetLombok)[pri:1, instance:api.test.PetTest@4351c8c3]" started-at="2026-07-18T21:27:20 IST" name="testCreatePet" data-provider="PetData" finished-at="2026-07-18T21:27:23 IST" duration-ms="3144" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[api.payload.PetLombok@28231a41]]>
+                <![CDATA[api.payload.PetLombok@636dc257]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreatePet -->
-        <test-method signature="testCreatePet(api.payload.PetLombok)[pri:1, instance:api.test.PetTest@2a7686a7]" started-at="2026-07-18T15:12:52 IST" name="testCreatePet" data-provider="PetData" finished-at="2026-07-18T15:12:56 IST" duration-ms="3493" status="PASS">
+        <test-method signature="testCreatePet(api.payload.PetLombok)[pri:1, instance:api.test.PetTest@4351c8c3]" started-at="2026-07-18T21:27:20 IST" name="testCreatePet" data-provider="PetData" finished-at="2026-07-18T21:27:23 IST" duration-ms="3271" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[api.payload.PetLombok@3978e1e0]]>
+                <![CDATA[api.payload.PetLombok@59c2085a]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreatePet -->
-        <test-method signature="testGetPet(int)[pri:2, instance:api.test.PetTest@2a7686a7]" started-at="2026-07-18T15:12:56 IST" name="testGetPet" data-provider="PetId" finished-at="2026-07-18T15:12:58 IST" duration-ms="1294" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[11022]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGetPet -->
-        <test-method signature="testGetPet(int)[pri:2, instance:api.test.PetTest@2a7686a7]" started-at="2026-07-18T15:12:56 IST" name="testGetPet" data-provider="PetId" finished-at="2026-07-18T15:12:58 IST" duration-ms="1272" status="PASS">
+        <test-method signature="testGetPet(int)[pri:2, instance:api.test.PetTest@4351c8c3]" started-at="2026-07-18T21:27:24 IST" name="testGetPet" data-provider="PetId" finished-at="2026-07-18T21:27:25 IST" duration-ms="1519" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -112,7 +101,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetPet -->
-        <test-method signature="testGetPet(int)[pri:2, instance:api.test.PetTest@2a7686a7]" started-at="2026-07-18T15:12:56 IST" name="testGetPet" data-provider="PetId" finished-at="2026-07-18T15:12:58 IST" duration-ms="1358" status="PASS">
+        <test-method signature="testGetPet(int)[pri:2, instance:api.test.PetTest@4351c8c3]" started-at="2026-07-18T21:27:24 IST" name="testGetPet" data-provider="PetId" finished-at="2026-07-18T21:27:25 IST" duration-ms="1440" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[11022]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetPet -->
+        <test-method signature="testGetPet(int)[pri:2, instance:api.test.PetTest@4351c8c3]" started-at="2026-07-18T21:27:24 IST" name="testGetPet" data-provider="PetId" finished-at="2026-07-18T21:27:25 IST" duration-ms="1312" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[11033]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetPet -->
+        <test-method signature="testGetPet(int)[pri:2, instance:api.test.PetTest@4351c8c3]" started-at="2026-07-18T21:27:24 IST" name="testGetPet" data-provider="PetId" finished-at="2026-07-18T21:27:25 IST" duration-ms="1667" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -123,7 +134,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetPet -->
-        <test-method signature="testGetPet(int)[pri:2, instance:api.test.PetTest@2a7686a7]" started-at="2026-07-18T15:12:56 IST" name="testGetPet" data-provider="PetId" finished-at="2026-07-18T15:12:58 IST" duration-ms="1285" status="PASS">
+        <test-method signature="testGetPet(int)[pri:2, instance:api.test.PetTest@4351c8c3]" started-at="2026-07-18T21:27:24 IST" name="testGetPet" data-provider="PetId" finished-at="2026-07-18T21:27:25 IST" duration-ms="1459" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -134,95 +145,62 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetPet -->
-        <test-method signature="testGetPet(int)[pri:2, instance:api.test.PetTest@2a7686a7]" started-at="2026-07-18T15:12:56 IST" name="testGetPet" data-provider="PetId" finished-at="2026-07-18T15:12:58 IST" duration-ms="1270" status="PASS">
+        <test-method signature="testUpdatePet(api.payload.PetLombok)[pri:3, instance:api.test.PetTest@4351c8c3]" started-at="2026-07-18T21:27:26 IST" name="testUpdatePet" data-provider="PetData" finished-at="2026-07-18T21:27:29 IST" duration-ms="2797" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[11033]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGetPet -->
-        <test-method signature="testUpdatePet(api.payload.PetLombok)[pri:3, instance:api.test.PetTest@2a7686a7]" started-at="2026-07-18T15:12:59 IST" name="testUpdatePet" data-provider="PetData" finished-at="2026-07-18T15:13:02 IST" duration-ms="3540" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[api.payload.PetLombok@5300ec1b]]>
+                <![CDATA[api.payload.PetLombok@ee1d885]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUpdatePet -->
-        <test-method signature="testUpdatePet(api.payload.PetLombok)[pri:3, instance:api.test.PetTest@2a7686a7]" started-at="2026-07-18T15:12:59 IST" name="testUpdatePet" data-provider="PetData" finished-at="2026-07-18T15:13:02 IST" duration-ms="3526" status="PASS">
+        <test-method signature="testUpdatePet(api.payload.PetLombok)[pri:3, instance:api.test.PetTest@4351c8c3]" started-at="2026-07-18T21:27:26 IST" name="testUpdatePet" data-provider="PetData" finished-at="2026-07-18T21:27:29 IST" duration-ms="3052" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[api.payload.PetLombok@74438ace]]>
+                <![CDATA[api.payload.PetLombok@21cd743d]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUpdatePet -->
-        <test-method signature="testUpdatePet(api.payload.PetLombok)[pri:3, instance:api.test.PetTest@2a7686a7]" started-at="2026-07-18T15:12:59 IST" name="testUpdatePet" data-provider="PetData" finished-at="2026-07-18T15:13:02 IST" duration-ms="3521" status="PASS">
+        <test-method signature="testUpdatePet(api.payload.PetLombok)[pri:3, instance:api.test.PetTest@4351c8c3]" started-at="2026-07-18T21:27:26 IST" name="testUpdatePet" data-provider="PetData" finished-at="2026-07-18T21:27:29 IST" duration-ms="3055" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[api.payload.PetLombok@29287b8b]]>
+                <![CDATA[api.payload.PetLombok@6e83d04]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUpdatePet -->
-        <test-method signature="testUpdatePet(api.payload.PetLombok)[pri:3, instance:api.test.PetTest@2a7686a7]" started-at="2026-07-18T15:12:59 IST" name="testUpdatePet" data-provider="PetData" finished-at="2026-07-18T15:13:02 IST" duration-ms="3525" status="PASS">
+        <test-method signature="testUpdatePet(api.payload.PetLombok)[pri:3, instance:api.test.PetTest@4351c8c3]" started-at="2026-07-18T21:27:26 IST" name="testUpdatePet" data-provider="PetData" finished-at="2026-07-18T21:27:29 IST" duration-ms="2780" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[api.payload.PetLombok@29ba622a]]>
+                <![CDATA[api.payload.PetLombok@fb9b550]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUpdatePet -->
-        <test-method signature="testUpdatePet(api.payload.PetLombok)[pri:3, instance:api.test.PetTest@2a7686a7]" started-at="2026-07-18T15:12:59 IST" name="testUpdatePet" data-provider="PetData" finished-at="2026-07-18T15:13:02 IST" duration-ms="3543" status="PASS">
+        <test-method signature="testUpdatePet(api.payload.PetLombok)[pri:3, instance:api.test.PetTest@4351c8c3]" started-at="2026-07-18T21:27:26 IST" name="testUpdatePet" data-provider="PetData" finished-at="2026-07-18T21:27:31 IST" duration-ms="4582" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[api.payload.PetLombok@51ac141b]]>
+                <![CDATA[api.payload.PetLombok@9796dbc]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUpdatePet -->
-        <test-method signature="testDeletePet(int)[pri:4, instance:api.test.PetTest@2a7686a7]" started-at="2026-07-18T15:13:03 IST" name="testDeletePet" data-provider="PetId" finished-at="2026-07-18T15:13:05 IST" duration-ms="2420" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[11022]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testDeletePet -->
-        <test-method signature="testDeletePet(int)[pri:4, instance:api.test.PetTest@2a7686a7]" started-at="2026-07-18T15:13:03 IST" name="testDeletePet" data-provider="PetId" finished-at="2026-07-18T15:13:05 IST" duration-ms="2380" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[11033]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testDeletePet -->
-        <test-method signature="testDeletePet(int)[pri:4, instance:api.test.PetTest@2a7686a7]" started-at="2026-07-18T15:13:03 IST" name="testDeletePet" data-provider="PetId" finished-at="2026-07-18T15:13:05 IST" duration-ms="2370" status="PASS">
+        <test-method signature="testDeletePet(int)[pri:4, instance:api.test.PetTest@4351c8c3]" started-at="2026-07-18T21:27:31 IST" name="testDeletePet" data-provider="PetId" finished-at="2026-07-18T21:27:33 IST" duration-ms="2512" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -233,7 +211,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeletePet -->
-        <test-method signature="testDeletePet(int)[pri:4, instance:api.test.PetTest@2a7686a7]" started-at="2026-07-18T15:13:03 IST" name="testDeletePet" data-provider="PetId" finished-at="2026-07-18T15:13:05 IST" duration-ms="2481" status="PASS">
+        <test-method signature="testDeletePet(int)[pri:4, instance:api.test.PetTest@4351c8c3]" started-at="2026-07-18T21:27:31 IST" name="testDeletePet" data-provider="PetId" finished-at="2026-07-18T21:27:34 IST" duration-ms="2869" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -244,7 +222,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeletePet -->
-        <test-method signature="testDeletePet(int)[pri:4, instance:api.test.PetTest@2a7686a7]" started-at="2026-07-18T15:13:03 IST" name="testDeletePet" data-provider="PetId" finished-at="2026-07-18T15:13:05 IST" duration-ms="2368" status="PASS">
+        <test-method signature="testDeletePet(int)[pri:4, instance:api.test.PetTest@4351c8c3]" started-at="2026-07-18T21:27:31 IST" name="testDeletePet" data-provider="PetId" finished-at="2026-07-18T21:27:33 IST" duration-ms="2495" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[11022]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeletePet -->
+        <test-method signature="testDeletePet(int)[pri:4, instance:api.test.PetTest@4351c8c3]" started-at="2026-07-18T21:27:31 IST" name="testDeletePet" data-provider="PetId" finished-at="2026-07-18T21:27:34 IST" duration-ms="2735" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[11033]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeletePet -->
+        <test-method signature="testDeletePet(int)[pri:4, instance:api.test.PetTest@4351c8c3]" started-at="2026-07-18T21:27:31 IST" name="testDeletePet" data-provider="PetId" finished-at="2026-07-18T21:27:34 IST" duration-ms="2815" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -257,66 +257,66 @@
         </test-method> <!-- testDeletePet -->
       </class> <!-- api.test.PetTest -->
       <class name="api.test.UserTest">
-        <test-method is-config="true" signature="setUpData()[pri:0, instance:api.test.UserTest@4bc28c33]" started-at="2026-07-18T15:12:50 IST" name="setUpData" finished-at="2026-07-18T15:12:50 IST" duration-ms="44" status="PASS">
+        <test-method is-config="true" signature="setUpData()[pri:0, instance:api.test.UserTest@5644dc81]" started-at="2026-07-18T21:27:18 IST" name="setUpData" finished-at="2026-07-18T21:27:18 IST" duration-ms="36" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpData -->
-        <test-method signature="testCreateUser(api.payload.User)[pri:1, instance:api.test.UserTest@4bc28c33]" started-at="2026-07-18T15:12:52 IST" name="testCreateUser" data-provider="UserData" finished-at="2026-07-18T15:12:56 IST" duration-ms="3607" status="PASS">
+        <test-method signature="testCreateUser(api.payload.UserLombok)[pri:1, instance:api.test.UserTest@5644dc81]" started-at="2026-07-18T21:27:20 IST" name="testCreateUser" data-provider="UserData" finished-at="2026-07-18T21:27:23 IST" duration-ms="3014" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[User {username='testuser44', id=11040, email='d123@gmail.com'}]]>
+                <![CDATA[api.payload.UserLombok@77931ebc]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateUser -->
-        <test-method signature="testCreateUser(api.payload.User)[pri:1, instance:api.test.UserTest@4bc28c33]" started-at="2026-07-18T15:12:52 IST" name="testCreateUser" data-provider="UserData" finished-at="2026-07-18T15:12:56 IST" duration-ms="3573" status="PASS">
+        <test-method signature="testCreateUser(api.payload.UserLombok)[pri:1, instance:api.test.UserTest@5644dc81]" started-at="2026-07-18T21:27:20 IST" name="testCreateUser" data-provider="UserData" finished-at="2026-07-18T21:27:23 IST" duration-ms="3125" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[User {username='testuser22', id=11020, email='b123@gmail.com'}]]>
+                <![CDATA[api.payload.UserLombok@ad7e31b]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateUser -->
-        <test-method signature="testCreateUser(api.payload.User)[pri:1, instance:api.test.UserTest@4bc28c33]" started-at="2026-07-18T15:12:52 IST" name="testCreateUser" data-provider="UserData" finished-at="2026-07-18T15:12:56 IST" duration-ms="3579" status="PASS">
+        <test-method signature="testCreateUser(api.payload.UserLombok)[pri:1, instance:api.test.UserTest@5644dc81]" started-at="2026-07-18T21:27:20 IST" name="testCreateUser" data-provider="UserData" finished-at="2026-07-18T21:27:23 IST" duration-ms="3008" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[User {username='testuser33', id=11030, email='c123@gmail.com'}]]>
+                <![CDATA[api.payload.UserLombok@3986bd9f]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateUser -->
-        <test-method signature="testCreateUser(api.payload.User)[pri:1, instance:api.test.UserTest@4bc28c33]" started-at="2026-07-18T15:12:52 IST" name="testCreateUser" data-provider="UserData" finished-at="2026-07-18T15:12:56 IST" duration-ms="3573" status="PASS">
+        <test-method signature="testCreateUser(api.payload.UserLombok)[pri:1, instance:api.test.UserTest@5644dc81]" started-at="2026-07-18T21:27:20 IST" name="testCreateUser" data-provider="UserData" finished-at="2026-07-18T21:27:23 IST" duration-ms="3008" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[User {username='testuser55', id=11050, email='e123@gmail.com'}]]>
+                <![CDATA[api.payload.UserLombok@708a98e2]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateUser -->
-        <test-method signature="testCreateUser(api.payload.User)[pri:1, instance:api.test.UserTest@4bc28c33]" started-at="2026-07-18T15:12:52 IST" name="testCreateUser" data-provider="UserData" finished-at="2026-07-18T15:12:56 IST" duration-ms="3583" status="PASS">
+        <test-method signature="testCreateUser(api.payload.UserLombok)[pri:1, instance:api.test.UserTest@5644dc81]" started-at="2026-07-18T21:27:20 IST" name="testCreateUser" data-provider="UserData" finished-at="2026-07-18T21:27:23 IST" duration-ms="3008" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[User {username='testuser11', id=11010, email='a123@gmail.com'}]]>
+                <![CDATA[api.payload.UserLombok@45a94194]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateUser -->
-        <test-method signature="testGetUser(java.lang.String)[pri:2, instance:api.test.UserTest@4bc28c33]" started-at="2026-07-18T15:12:56 IST" name="testGetUser" data-provider="UserName" finished-at="2026-07-18T15:12:57 IST" duration-ms="1179" status="PASS">
+        <test-method signature="testGetUser(java.lang.String)[pri:2, instance:api.test.UserTest@5644dc81]" started-at="2026-07-18T21:27:24 IST" name="testGetUser" data-provider="UserName" finished-at="2026-07-18T21:27:25 IST" duration-ms="1333" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -327,7 +327,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetUser -->
-        <test-method signature="testGetUser(java.lang.String)[pri:2, instance:api.test.UserTest@4bc28c33]" started-at="2026-07-18T15:12:56 IST" name="testGetUser" data-provider="UserName" finished-at="2026-07-18T15:12:58 IST" duration-ms="1294" status="PASS">
+        <test-method signature="testGetUser(java.lang.String)[pri:2, instance:api.test.UserTest@5644dc81]" started-at="2026-07-18T21:27:24 IST" name="testGetUser" data-provider="UserName" finished-at="2026-07-18T21:27:25 IST" duration-ms="1563" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -338,7 +338,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetUser -->
-        <test-method signature="testGetUser(java.lang.String)[pri:2, instance:api.test.UserTest@4bc28c33]" started-at="2026-07-18T15:12:56 IST" name="testGetUser" data-provider="UserName" finished-at="2026-07-18T15:12:58 IST" duration-ms="1282" status="PASS">
+        <test-method signature="testGetUser(java.lang.String)[pri:2, instance:api.test.UserTest@5644dc81]" started-at="2026-07-18T21:27:24 IST" name="testGetUser" data-provider="UserName" finished-at="2026-07-18T21:27:26 IST" duration-ms="1677" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -349,7 +349,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetUser -->
-        <test-method signature="testGetUser(java.lang.String)[pri:2, instance:api.test.UserTest@4bc28c33]" started-at="2026-07-18T15:12:56 IST" name="testGetUser" data-provider="UserName" finished-at="2026-07-18T15:12:58 IST" duration-ms="1399" status="PASS">
+        <test-method signature="testGetUser(java.lang.String)[pri:2, instance:api.test.UserTest@5644dc81]" started-at="2026-07-18T21:27:24 IST" name="testGetUser" data-provider="UserName" finished-at="2026-07-18T21:27:25 IST" duration-ms="1338" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -360,7 +360,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetUser -->
-        <test-method signature="testGetUser(java.lang.String)[pri:2, instance:api.test.UserTest@4bc28c33]" started-at="2026-07-18T15:12:56 IST" name="testGetUser" data-provider="UserName" finished-at="2026-07-18T15:12:58 IST" duration-ms="1339" status="PASS">
+        <test-method signature="testGetUser(java.lang.String)[pri:2, instance:api.test.UserTest@5644dc81]" started-at="2026-07-18T21:27:24 IST" name="testGetUser" data-provider="UserName" finished-at="2026-07-18T21:27:25 IST" duration-ms="1314" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -371,62 +371,62 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetUser -->
-        <test-method signature="testUpdateUser(api.payload.User)[pri:3, instance:api.test.UserTest@4bc28c33]" started-at="2026-07-18T15:12:59 IST" name="testUpdateUser" data-provider="UserData" finished-at="2026-07-18T15:13:03 IST" duration-ms="3832" status="PASS">
+        <test-method signature="testUpdateUser(api.payload.UserLombok)[pri:3, instance:api.test.UserTest@5644dc81]" started-at="2026-07-18T21:27:26 IST" name="testUpdateUser" data-provider="UserData" finished-at="2026-07-18T21:27:29 IST" duration-ms="2922" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[User {username='testuser22', id=11020, email='martin.oconnell@example.com'}]]>
+                <![CDATA[api.payload.UserLombok@656267b7]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUpdateUser -->
-        <test-method signature="testUpdateUser(api.payload.User)[pri:3, instance:api.test.UserTest@4bc28c33]" started-at="2026-07-18T15:12:59 IST" name="testUpdateUser" data-provider="UserData" finished-at="2026-07-18T15:13:03 IST" duration-ms="3830" status="PASS">
+        <test-method signature="testUpdateUser(api.payload.UserLombok)[pri:3, instance:api.test.UserTest@5644dc81]" started-at="2026-07-18T21:27:26 IST" name="testUpdateUser" data-provider="UserData" finished-at="2026-07-18T21:27:30 IST" duration-ms="3202" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[User {username='testuser44', id=11040, email='ashanti.goyette@example.com'}]]>
+                <![CDATA[api.payload.UserLombok@7c2b0f6a]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUpdateUser -->
-        <test-method signature="testUpdateUser(api.payload.User)[pri:3, instance:api.test.UserTest@4bc28c33]" started-at="2026-07-18T15:12:59 IST" name="testUpdateUser" data-provider="UserData" finished-at="2026-07-18T15:13:03 IST" duration-ms="3809" status="PASS">
+        <test-method signature="testUpdateUser(api.payload.UserLombok)[pri:3, instance:api.test.UserTest@5644dc81]" started-at="2026-07-18T21:27:26 IST" name="testUpdateUser" data-provider="UserData" finished-at="2026-07-18T21:27:29 IST" duration-ms="2926" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[User {username='testuser33', id=11030, email='rick.runolfsdottir@example.com'}]]>
+                <![CDATA[api.payload.UserLombok@3c2b6f00]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUpdateUser -->
-        <test-method signature="testUpdateUser(api.payload.User)[pri:3, instance:api.test.UserTest@4bc28c33]" started-at="2026-07-18T15:12:59 IST" name="testUpdateUser" data-provider="UserData" finished-at="2026-07-18T15:13:03 IST" duration-ms="3878" status="PASS">
+        <test-method signature="testUpdateUser(api.payload.UserLombok)[pri:3, instance:api.test.UserTest@5644dc81]" started-at="2026-07-18T21:27:26 IST" name="testUpdateUser" data-provider="UserData" finished-at="2026-07-18T21:27:29 IST" duration-ms="2920" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[User {username='testuser11', id=11010, email='dee.walter@example.com'}]]>
+                <![CDATA[api.payload.UserLombok@22924928]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUpdateUser -->
-        <test-method signature="testUpdateUser(api.payload.User)[pri:3, instance:api.test.UserTest@4bc28c33]" started-at="2026-07-18T15:12:59 IST" name="testUpdateUser" data-provider="UserData" finished-at="2026-07-18T15:13:02 IST" duration-ms="3708" status="PASS">
+        <test-method signature="testUpdateUser(api.payload.UserLombok)[pri:3, instance:api.test.UserTest@5644dc81]" started-at="2026-07-18T21:27:26 IST" name="testUpdateUser" data-provider="UserData" finished-at="2026-07-18T21:27:30 IST" duration-ms="3048" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[User {username='testuser55', id=11050, email='raul.oconner@example.com'}]]>
+                <![CDATA[api.payload.UserLombok@4d5d1da8]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUpdateUser -->
-        <test-method signature="testDeleteUser(java.lang.String)[pri:4, instance:api.test.UserTest@4bc28c33]" started-at="2026-07-18T15:13:03 IST" name="testDeleteUser" data-provider="UserName" finished-at="2026-07-18T15:13:05 IST" duration-ms="2441" status="PASS">
+        <test-method signature="testDeleteUser(java.lang.String)[pri:4, instance:api.test.UserTest@5644dc81]" started-at="2026-07-18T21:27:30 IST" name="testDeleteUser" data-provider="UserName" finished-at="2026-07-18T21:27:33 IST" duration-ms="3192" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -437,18 +437,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeleteUser -->
-        <test-method signature="testDeleteUser(java.lang.String)[pri:4, instance:api.test.UserTest@4bc28c33]" started-at="2026-07-18T15:13:03 IST" name="testDeleteUser" data-provider="UserName" finished-at="2026-07-18T15:13:05 IST" duration-ms="2488" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[testuser33]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testDeleteUser -->
-        <test-method signature="testDeleteUser(java.lang.String)[pri:4, instance:api.test.UserTest@4bc28c33]" started-at="2026-07-18T15:13:03 IST" name="testDeleteUser" data-provider="UserName" finished-at="2026-07-18T15:13:05 IST" duration-ms="2557" status="PASS">
+        <test-method signature="testDeleteUser(java.lang.String)[pri:4, instance:api.test.UserTest@5644dc81]" started-at="2026-07-18T21:27:30 IST" name="testDeleteUser" data-provider="UserName" finished-at="2026-07-18T21:27:33 IST" duration-ms="3179" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -459,7 +448,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeleteUser -->
-        <test-method signature="testDeleteUser(java.lang.String)[pri:4, instance:api.test.UserTest@4bc28c33]" started-at="2026-07-18T15:13:03 IST" name="testDeleteUser" data-provider="UserName" finished-at="2026-07-18T15:13:05 IST" duration-ms="2506" status="PASS">
+        <test-method signature="testDeleteUser(java.lang.String)[pri:4, instance:api.test.UserTest@5644dc81]" started-at="2026-07-18T21:27:30 IST" name="testDeleteUser" data-provider="UserName" finished-at="2026-07-18T21:27:33 IST" duration-ms="3174" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testuser33]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteUser -->
+        <test-method signature="testDeleteUser(java.lang.String)[pri:4, instance:api.test.UserTest@5644dc81]" started-at="2026-07-18T21:27:30 IST" name="testDeleteUser" data-provider="UserName" finished-at="2026-07-18T21:27:33 IST" duration-ms="3173" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -470,7 +470,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeleteUser -->
-        <test-method signature="testDeleteUser(java.lang.String)[pri:4, instance:api.test.UserTest@4bc28c33]" started-at="2026-07-18T15:13:03 IST" name="testDeleteUser" data-provider="UserName" finished-at="2026-07-18T15:13:05 IST" duration-ms="2410" status="PASS">
+        <test-method signature="testDeleteUser(java.lang.String)[pri:4, instance:api.test.UserTest@5644dc81]" started-at="2026-07-18T21:27:30 IST" name="testDeleteUser" data-provider="UserName" finished-at="2026-07-18T21:27:33 IST" duration-ms="3175" status="PASS">
           <params>
             <param index="0">
               <value>

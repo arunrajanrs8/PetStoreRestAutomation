@@ -5,9 +5,13 @@ import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonMappingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.javafaker.Faker;
 import api.endpoints.UserEndPoint;
-import api.payload.User;
+import api.payload.UserLombok;
 import api.utilities.DataProviders;
 import api.utilities.SheetName;
 import io.restassured.response.Response;
@@ -24,10 +28,9 @@ public class UserTest {
 	
 	@Test(priority=1, dataProvider="UserData", dataProviderClass=DataProviders.class, groups = {"UserAPI-CreateUser"})
 	@SheetName("UserDetails")
-	public void testCreateUser(User usrDtls) {
+	public void testCreateUser(UserLombok usrDtls) {
 		
 		Response response = UserEndPoint.createUser(usrDtls);
-		response.then().log().all();
 		Assert.assertEquals(response.getStatusCode(), 200);
 		
 	}
@@ -37,35 +40,31 @@ public class UserTest {
 	public void testGetUser(String userName) {
 		
 		Response response = UserEndPoint.getUser(userName);
-		response.then().log().all();
 		Assert.assertEquals(response.getStatusCode(), 200);
 		
 	}
 	
 	@Test(priority=3, dataProvider="UserData", dataProviderClass=DataProviders.class, groups = {"UserAPI-UpdateUser"})
 	@SheetName("UserDetails")
-	public void testUpdateUser(User usrDtls) {
+	public void testUpdateUser(UserLombok usrDtls) throws JsonMappingException, JsonProcessingException {
 		
+		ObjectMapper obj = new ObjectMapper();
 		//update certain user details
 		usrDtls.setFirstName(faker.name().firstName());
 		usrDtls.setLastName(faker.name().lastName());
 		usrDtls.setEmail(faker.internet().safeEmailAddress());
 		
 		Response response = UserEndPoint.updateUser(usrDtls.getUsername(), usrDtls);
-		response.then().log().all();
-		response.then().log().body().statusCode(200);
 		Assert.assertEquals(response.getStatusCode(), 200);
 		
 		//Checking data after update
-		Response updateResp = UserEndPoint.getUser(usrDtls.getUsername());
+		Response getResp = UserEndPoint.getUser(usrDtls.getUsername());
 		
-		String firstName = updateResp.jsonPath().getString("firstName");
-		Assert.assertEquals(firstName, usrDtls.getFirstName());
-		String lastName = updateResp.jsonPath().getString("lastName");
-		Assert.assertEquals(lastName, usrDtls.getLastName());
-		String email = updateResp.jsonPath().getString("email");
-		Assert.assertEquals(email, usrDtls.getEmail());
-		Assert.assertEquals(updateResp.getStatusCode(), 200);
+		UserLombok getResponse = obj.readValue(getResp.asString(), UserLombok.class);
+		Assert.assertEquals(usrDtls.getFirstName(), getResponse.getFirstName());
+		Assert.assertEquals(usrDtls.getLastName(), getResponse.getLastName());
+		Assert.assertEquals(usrDtls.getEmail(), getResponse.getEmail());
+		Assert.assertEquals(getResp.getStatusCode(), 200);
 		
 	}
 	
@@ -74,16 +73,13 @@ public class UserTest {
 	public void testDeleteUser(String userName) {
 		
 		Response response = UserEndPoint.deleteUser(userName);
-		response.then().log().all();
 		Assert.assertEquals(response.getStatusCode(), 200);
 		
 		Response delRes = UserEndPoint.getUser(userName);
 		Assert.assertEquals(delRes.getStatusCode(), 404);
 		String message = delRes.jsonPath().getString("message");
 		Assert.assertEquals(message, "User not found");
-
-
-		
+	
 	}
 	
 }

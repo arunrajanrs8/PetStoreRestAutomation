@@ -4,7 +4,7 @@ import static io.restassured.RestAssured.given;
 
 import java.util.ResourceBundle;
 
-import api.payload.User;
+import api.payload.UserLombok;
 import api.reporting.RestAssuredFilter;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
@@ -16,7 +16,7 @@ public class UserEndPoint {
 		return routes;
 	}
 
-	public static Response createUser(User userDtls) {
+	public static Response createUser(UserLombok userDtls) {
 
 		Response response = given()
 				.filter(new RestAssuredFilter())
@@ -40,7 +40,7 @@ public class UserEndPoint {
 		return response;
 	}
 
-	public static Response updateUser(String userName, User userDtls) {
+	public static Response updateUser(String userName, UserLombok userDtls) {
 
 		Response response = given()
 				.filter(new RestAssuredFilter())

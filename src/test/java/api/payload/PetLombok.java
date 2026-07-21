@@ -2,28 +2,14 @@ package api.payload;
 
 import java.util.List;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
-
-import lombok.AllArgsConstructor;
-import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @NoArgsConstructor
-@AllArgsConstructor
-@Data
-@JsonInclude(JsonInclude.Include.NON_NULL)
 public class PetLombok {
-	
-	public PetLombok(Integer id, CategoryCustom category, String name, List<String> photoUrls, List<TagCustom> tags,
-			String status) {
-		this.id = id;
-		this.category = category;
-		this.name = name;
-		this.photoUrls = photoUrls;
-		this.tags = tags;
-		this.status = status;
-	}
 
+	public PetLombok() {
+	}
+	
 	private Integer id;
 	private CategoryCustom category;
 	private String name;
@@ -31,6 +17,15 @@ public class PetLombok {
 	List<TagCustom> tags;
 	private String status;
 	
+	public PetLombok(Integer id, CategoryCustom category, String name, List<String> photoUrls, List<TagCustom> tags,
+			         String status) {
+		this.id = id;
+		this.category = category;
+		this.name = name;
+		this.photoUrls = photoUrls;
+		this.tags = tags;
+		this.status = status;
+	}
 
 	public Integer getId() {
 		return id;
@@ -81,18 +76,19 @@ public class PetLombok {
 	}
 
 	@NoArgsConstructor
-	@AllArgsConstructor
-	@Data
-	@JsonInclude(JsonInclude.Include.NON_NULL)
 	public static class CategoryCustom
 	{
-		public CategoryCustom(Integer id, String name) {
-			this.id = id;
-			this.name = name;
+		
+		public CategoryCustom() {
 		}
 		
 		private Integer id;
 		private String name;
+		
+		public CategoryCustom(Integer id, String name) {
+			this.id = id;
+			this.name = name;
+		}
 		
 		public Integer getId() {
 			return id;
@@ -110,18 +106,18 @@ public class PetLombok {
 	}
 	
 	@NoArgsConstructor
-	@AllArgsConstructor
-	@Data
-	@JsonInclude(JsonInclude.Include.NON_NULL)
 	public static class TagCustom
 	{
-		public TagCustom(Integer id, String name) {
-			this.id = id;
-			this.name = name;
+		public TagCustom() {
 		}
 		
 		private Integer id;
 		private String name;
+		
+		public TagCustom(Integer id, String name) {
+			this.id = id;
+			this.name = name;
+		}
 		
 		public Integer getId() {
 			return id;

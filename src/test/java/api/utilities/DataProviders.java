@@ -10,7 +10,7 @@ import org.testng.annotations.DataProvider;
 import api.payload.PetLombok;
 import api.payload.PetLombok.CategoryCustom;
 import api.payload.PetLombok.TagCustom;
-import api.payload.User;
+import api.payload.UserLombok;
 
 public class DataProviders {
 	
@@ -28,15 +28,18 @@ public class DataProviders {
 		Object[][] userData = new Object[rowNum][1]; //one object per row
 
 	    for (int i = 1; i <= rowNum; i++) {
-	        User user = new User();
-	        user.setId(Integer.parseInt(utl.getCellData(sheetName, i, 0)));
-	        user.setUsername(utl.getCellData(sheetName, i, 1));
-	        user.setFirstName(utl.getCellData(sheetName, i, 2));
-	        user.setLastName(utl.getCellData(sheetName, i, 3));
-	        user.setEmail(utl.getCellData(sheetName, i, 4));
-	        user.setPassword(utl.getCellData(sheetName, i, 5));
-	        user.setPhone(utl.getCellData(sheetName, i, 6));
-	        userData[i - 1][0] = user; // store object
+	  
+	        Integer userId = Integer.parseInt(utl.getCellData(sheetName, i, 0));
+	        String userName = utl.getCellData(sheetName, i, 1);
+	        String firstName = utl.getCellData(sheetName, i, 2);
+	        String lastName = utl.getCellData(sheetName, i, 3);
+	        String email = utl.getCellData(sheetName, i, 4);
+	        String password = utl.getCellData(sheetName, i, 5);
+	        String phone = utl.getCellData(sheetName, i, 6);
+	        Integer userStatus = Integer.parseInt(utl.getCellData(sheetName, i, 7));
+	        
+	        UserLombok userDtls = new UserLombok(userId, userName, firstName, lastName, email, password, phone, userStatus);
+	        userData[i - 1][0] = userDtls; // store object
 	    }
 	    
 	    return userData;
